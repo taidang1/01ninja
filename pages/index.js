@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
-
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import { Swiper, SwiperSlide } from "swiper/react";
 import AddBusinessIcon from '@mui/icons-material/AddBusiness';
 import React, { useRef, useState } from 'react';
@@ -48,9 +48,12 @@ export default function Home(props) {
       <video style={{width:'auto', height:'550px'}} source src="/home2_video.mp4" autoPlay loop muted></video>
       </div>
       <div className={styles.home3}>
-        <div style={{display:'flex', alignItems:'center', flexDirection:'column',paddingTop:'60px' }}>
+        <div className={styles.home3_wrap}>
+        <div style={{display:'flex', flexDirection:'column',paddingTop:'60px' , alignItems:'center' }}>
         <h2 style={{textAlign:'left', color:'#FAF9F7'}} >Software &</h2>
         <h2 style={{textAlign:'left', color:'#51CA58'}}>cannabis</h2>
+        <p style={{textAlign:'left', color:'#FAF9F7', width:'30%', paddingTop:'12px'}}>A cannabis software automates inventory management, sales tracking, and reporting, streamlining business processes, and reducing the manual workload.</p>
+        </div>
         </div>
         <div className={styles.swiper_wrap}>
       <Swiper
@@ -73,7 +76,7 @@ export default function Home(props) {
           }
         }}
        
-      style={{padding:'90px'}} >
+      style={{paddingTop:'30px', paddingBottom:'90px', paddingRight:'90px',paddingLeft:'90px'}} >
         <SwiperSlide style={{color:'#fff', backgroundColor:'#090600', borderRadius:'25px',    boxShadow: 'rgba(0, 0, 0, 0.45) 0px 25px 20px -20px'}}>
           <div className={styles.swiper_slide_content}>
             <AddBusinessIcon style={{color:'#27241D', fontSize:'50px',backgroundColor:'#C1F2C7', padding:'6px', borderRadius:'10px'}}/>
@@ -234,6 +237,8 @@ export default function Home(props) {
       </Swiper>
           </div>
           <div className={styles.home6}>
+            <h2>View our live demo! </h2>
+            <button className={styles.demo_btn}>View demo<PlayArrowIcon/></button>
             </div>
     </section>
   )
