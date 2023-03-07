@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useFirestore } from '../hooks/useFirestore'
+import styles from '../styles/Join.module.css'
 
 const becomeapartner = () => {
     const [companyName, setCompanyName] = useState('')
@@ -42,10 +43,12 @@ const becomeapartner = () => {
     }, [response.success])
 
     return (
-        <div>
-            <h3>Add a Transaction</h3>
+        <div className={styles.join_us}>
+            <h3 style={{fontSize:'1.618em', fontWeight:'400'}}>Request a call and demo with us!</h3>
+            <div className={styles.join_form}>
             <form onSubmit={handleSubmit}>
-                <label>
+                <div>
+                <label style={{display:'flex', flexDirection:'column'}}>
                     <span>Company name:</span>
                     <input 
                         type="text"
@@ -54,7 +57,7 @@ const becomeapartner = () => {
                         value={companyName}
                     />
                 </label>
-                <label>
+                <label style={{display:'flex', flexDirection:'column'}}>
                     <span>Website URL:</span>
                     <input 
                         type="text"
@@ -63,6 +66,7 @@ const becomeapartner = () => {
                         value={websiteURL}
                     />
                 </label>
+                </div>
                 <h4>Point of Contact</h4>
                 <label>
                     <span>First name:</span>
@@ -120,6 +124,7 @@ const becomeapartner = () => {
                 </label>
                 <button>Submit</button>
             </form>
+            </div>
         </div>
     );
 }

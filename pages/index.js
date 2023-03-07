@@ -8,15 +8,20 @@ import AddBusinessIcon from '@mui/icons-material/AddBusiness';
 import React, { useRef, useState } from 'react';
 import "swiper/css";
 import ShopIcon from '@mui/icons-material/Shop';
-
+import TuneIcon from '@mui/icons-material/Tune';
 import "swiper/css/free-mode";
-import { Autoplay, Pagination, Navigation, FreeMode } from 'swiper';
+import { Autoplay, Pagination, Navigation, FreeMode,Grid } from 'swiper';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import PhoneCallbackIcon from '@mui/icons-material/PhoneCallback';
-
-
+import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
+import VideoSettingsIcon from '@mui/icons-material/VideoSettings';
+import AnalyticsIcon from '@mui/icons-material/Analytics';
+import PaidIcon from '@mui/icons-material/Paid';
+import "swiper/css/grid";
+import AssuredWorkloadIcon from '@mui/icons-material/AssuredWorkload';
+import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 
 
 export default function Home(props) {
@@ -76,12 +81,13 @@ export default function Home(props) {
           }
         }}
        
-      style={{paddingTop:'30px', paddingBottom:'90px', paddingRight:'90px',paddingLeft:'90px'}} >
+      style={{paddingTop:'60px', paddingBottom:'90px', paddingRight:'90px',paddingLeft:'90px'}} >
         <SwiperSlide style={{color:'#fff', backgroundColor:'#090600', borderRadius:'25px',    boxShadow: 'rgba(0, 0, 0, 0.45) 0px 25px 20px -20px'}}>
-          <div className={styles.swiper_slide_content}>
+        <div className={styles.swiper_slide_content}>
+            <div className={styles.swiper_slide_title}>
             <AddBusinessIcon style={{color:'#27241D', fontSize:'50px',backgroundColor:'#C1F2C7', padding:'6px', borderRadius:'10px'}}/>
-            <div className={styles.swiper_slide_title}>Slide 1</div>
-            <div>
+              <h3 style={{color:'#51CA58'}}>Branding</h3>
+            <p style={{color:'#fff'}}>As a cannabis business grows, a software can easily scale with the business. </p>
             <button className={styles.learn_more_btn}>learn more</button>
             </div>
           </div>
@@ -89,53 +95,89 @@ export default function Home(props) {
 
         <SwiperSlide style={{color:'#fff', backgroundColor:'#000', borderRadius:'25px', boxShadow: 'rgba(0, 0, 0, 0.45) 0px 25px 20px -20px'}}>
           <div className={styles.swiper_slide_content}>
+            <div className={styles.swiper_slide_title}>
             <ShopIcon style={{color:'#27241D', fontSize:'50px',backgroundColor:'#C1F2C7', padding:'6px', borderRadius:'10px'}}/>
-            <div className={styles.swiper_slide_title}>Slide 2</div>
+              <h3 style={{color:'#51CA58'}}>E-commerce</h3>
+            <p style={{color:'#fff'}}>As a cannabis business grows, a software can easily scale with the business. </p>
+            <button className={styles.learn_more_btn}>learn more</button>
+            </div>
           </div>
         </SwiperSlide>
 
         <SwiperSlide style={{color:'#fff', backgroundColor:'#000', borderRadius:'25px',  boxShadow: 'rgba(0, 0, 0, 0.45) 0px 25px 20px -20px'}}>
-          <div className={styles.swiper_slide_content}>
-            <div className={styles.swiper_slide_title}>Slide 3</div>
+        <div className={styles.swiper_slide_content}>
+            <div className={styles.swiper_slide_title}>
+            <TuneIcon style={{color:'#27241D', fontSize:'50px',backgroundColor:'#C1F2C7', padding:'6px', borderRadius:'10px'}}/>
+              <h3 style={{color:'#51CA58'}}>Custom</h3>
+            <p style={{color:'#fff'}}>As a cannabis business grows, a software can easily scale with the business. </p>
+            <button className={styles.learn_more_btn}>learn more</button>
+            </div>
           </div>
         </SwiperSlide>
 
         <SwiperSlide style={{color:'#fff', backgroundColor:'#000', borderRadius:'25px',  boxShadow: 'rgba(0, 0, 0, 0.45) 0px 25px 20px -20px'}}>
-          <div className={styles.swiper_slide_content}>
-            <div className={styles.swiper_slide_title}>Slide 4</div>
+        <div className={styles.swiper_slide_content}>
+            <div className={styles.swiper_slide_title}>
+            <VolunteerActivismIcon style={{color:'#27241D', fontSize:'50px',backgroundColor:'#C1F2C7', padding:'6px', borderRadius:'10px'}}/>
+              <h3 style={{color:'#51CA58'}}>Hand-coded</h3>
+            <p style={{color:'#fff'}}>As a cannabis business grows, a software can easily scale with the business. </p>
+            <button className={styles.learn_more_btn}>learn more</button>
+            </div>
           </div>
         </SwiperSlide>
 
         <SwiperSlide style={{color:'#fff', backgroundColor:'#000', borderRadius:'25px'}}>
-          <div className={styles.swiper_slide_content}>
-            <div className={styles.swiper_slide_title}>Slide 5</div>
+        <div className={styles.swiper_slide_content}>
+            <div className={styles.swiper_slide_title}>
+            <VideoSettingsIcon style={{color:'#27241D', fontSize:'50px',backgroundColor:'#C1F2C7', padding:'6px', borderRadius:'10px'}}/>
+              <h3 style={{color:'#51CA58'}}>CMS</h3>
+            <p style={{color:'#fff'}}>As a cannabis business grows, a software can easily scale with the business. </p>
+            <button className={styles.learn_more_btn}>learn more</button>
+            </div>
           </div>
         </SwiperSlide>
 
-        <SwiperSlide>
-          <div className={styles.swiper_slide_content}>
-            <div className={styles.swiper_slide_title}>Slide 6</div>
+        <SwiperSlide style={{color:'#fff', backgroundColor:'#000', borderRadius:'25px'}}>
+        <div className={styles.swiper_slide_content}>
+            <div className={styles.swiper_slide_title}>
+            <AnalyticsIcon style={{color:'#27241D', fontSize:'50px',backgroundColor:'#C1F2C7', padding:'6px', borderRadius:'10px'}}/>
+              <h3 style={{color:'#51CA58'}}>Analytics</h3>
+            <p style={{color:'#fff'}}>As a cannabis business grows, a software can easily scale with the business. </p>
+            <button className={styles.learn_more_btn}>learn more</button>
+            </div>
           </div>
         </SwiperSlide>
 
-        <SwiperSlide>
-          <div className={styles.swiper_slide_content}>
-            <div className={styles.swiper_slide_title}>Slide 7</div>
+        <SwiperSlide style={{color:'#fff', backgroundColor:'#000', borderRadius:'25px'}}>
+        <div className={styles.swiper_slide_content}>
+            <div className={styles.swiper_slide_title}>
+            <PaidIcon style={{color:'#27241D', fontSize:'50px',backgroundColor:'#C1F2C7', padding:'6px', borderRadius:'10px'}}/>
+              <h3 style={{color:'#51CA58'}}>Payments</h3>
+            <p style={{color:'#fff'}}>As a cannabis business grows, a software can easily scale with the business. </p>
+            <button className={styles.learn_more_btn}>learn more</button>
+            </div>
           </div>
         </SwiperSlide>
-
-        <SwiperSlide>
-          <div className={styles.swiper_slide_content}>
-            <div className={styles.swiper_slide_title}>Slide 8</div>
+        <SwiperSlide style={{color:'#fff', backgroundColor:'#000', borderRadius:'25px'}}>
+        <div className={styles.swiper_slide_content}>
+            <div className={styles.swiper_slide_title}>
+            <AssuredWorkloadIcon style={{color:'#27241D', fontSize:'50px',backgroundColor:'#C1F2C7', padding:'6px', borderRadius:'10px'}}/>
+              <h3 style={{color:'#51CA58'}}>Training</h3>
+            <p style={{color:'#fff'}}>As a cannabis business grows, a software can easily scale with the business. </p>
+            <button className={styles.learn_more_btn}>learn more</button>
+            </div>
           </div>
         </SwiperSlide>
-
-        <SwiperSlide>
-          <div className={styles.swiper_slide_content}>
-            <div className={styles.swiper_slide_title}>Slide 9</div>
+        <SwiperSlide style={{color:'#fff', backgroundColor:'#000', borderRadius:'25px'}}>
+        <div className={styles.swiper_slide_content}>
+            <div className={styles.swiper_slide_title}>
+            <SupportAgentIcon style={{color:'#27241D', fontSize:'50px',backgroundColor:'#C1F2C7', padding:'6px', borderRadius:'10px'}}/>
+              <h3 style={{color:'#51CA58'}}>Unlimited support</h3>
+            <p style={{color:'#fff'}}>As a cannabis business grows, a software can easily scale with the business. </p>
+            <button className={styles.learn_more_btn}>learn more</button>
+            </div>
           </div>
         </SwiperSlide>
-
  
       </Swiper>
       </div>
@@ -212,9 +254,72 @@ export default function Home(props) {
       </div>
       </div>
         </div>
+        <div className={styles.home_tech}>
+          <h1>tech leveraged</h1>
+          <Swiper
+        slidesPerView={5}
+        grid={{
+          rows: 2,
+        }}
+        spaceBetween={30}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Grid, Pagination]}
+        className={styles.swiper_tech}
+      >
+        <SwiperSlide className={styles.swiper_slider_tech}>
+          <img className={styles.tech_img} src="mongodb_icon.png" alt="mongo" />
+          <p>MongoDB</p>
+        </SwiperSlide>
+        <SwiperSlide className={styles.swiper_slider_tech}>
+        <img className={styles.tech_img} src="aws_ec2.png" alt="aws ec2" />
+        <p>Aws Ec2</p>
+        </SwiperSlide>
+        <SwiperSlide className={styles.swiper_slider_tech}>
+        <img className={styles.tech_img} src="aws_icon.png" alt="aws " />
+        <p>AWS</p>
+        
+        </SwiperSlide>
+        <SwiperSlide className={styles.swiper_slider_tech}>Slide 4</SwiperSlide>
+        <SwiperSlide className={styles.swiper_slider_tech}>
+        <img className={styles.tech_img} src="nextjs.png" alt="next js" />
+        <p>Next Js</p>
+        </SwiperSlide>
+        <SwiperSlide className={styles.swiper_slider_tech}>Slide 6</SwiperSlide>
+        <SwiperSlide className={styles.swiper_slider_tech}>
+        <img className={styles.tech_img} src="js_icon.png" alt="next js" />
+        <p>JavaScript</p>
+        </SwiperSlide>
+        <SwiperSlide className={styles.swiper_slider_tech}>Slide 8</SwiperSlide>
+        <SwiperSlide className={styles.swiper_slider_tech}>
+        <img className={styles.tech_img} src="medusajs_icon.png" alt="next js" />
+        <p>Medusa Js</p>
+        </SwiperSlide>
+        <SwiperSlide className={styles.swiper_slider_tech}>Slide 9</SwiperSlide>
+        <SwiperSlide className={styles.swiper_slider_tech}>
+        <img className={styles.tech_img} src="react_icon.svg" alt="next js" />
+        <p>React Js</p>
+        </SwiperSlide>
+        <SwiperSlide className={styles.swiper_slider_tech}>Slide 9</SwiperSlide>
+        <SwiperSlide className={styles.swiper_slider_tech}>
+        <img className={styles.tech_img} src="openai_icon.png" alt="next js" />
+        <p>Open AI</p>
+
+        </SwiperSlide>
+        <SwiperSlide className={styles.swiper_slider_tech}>Slide 9</SwiperSlide>
+        <SwiperSlide className={styles.swiper_slider_tech}>Slide 9</SwiperSlide>
+      </Swiper>
+
+      <div style={{display:'flex', alignItems:'center'}}>
+      <a style={{textDecoration:'underline', textDecorationColor:'#51CA58', fontWeight:'550', textDecorationThickness:'3px', textUnderlineOffset:'6px'}}>Learn more</a>
+     <ArrowForwardIosIcon style={{fontSize:'16px', marginLeft:'12px'}}/>
+      </div>
+        </div>
         <div className={styles.home5}>
           <div className={styles.home5_text}>
           <h2 style={{textAlign:'center'}}>Our customers rave!</h2>
+        
           </div>
         <Swiper
         Pagination={false}

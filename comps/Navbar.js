@@ -66,10 +66,10 @@ useEffect(() => {
                         <Link href="/about">About</Link>
                     </div>
                     <div className={styles.singlelink}>
-                        <Link href="/about">Services</Link>
+                        <Link href="/services">Services</Link>
                     </div>
                     <div className={styles.singlelink}>
-                        <Link href="/about">Pricing</Link>
+                        <Link href="/price">Pricing</Link>
                     </div>
                     <div className={styles.singlelink}>
                         <Link href="/about">Demo</Link>
