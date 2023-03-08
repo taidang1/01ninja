@@ -37,7 +37,7 @@ const services = () => {
                </div>
                 </div>
             </div>
-            <div className={styles.service_brand}>
+            <div className={styles.service_brand} id="service_brand">
                 <div className={styles.service_brand_wrapper}>
                 <div className={styles.service_brand_text}>
                     <h2 >We help build your brand</h2>

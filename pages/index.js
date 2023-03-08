@@ -22,6 +22,7 @@ import PaidIcon from '@mui/icons-material/Paid';
 import "swiper/css/grid";
 import AssuredWorkloadIcon from '@mui/icons-material/AssuredWorkload';
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
+import Link from 'next/link'
 
 
 export default function Home(props) {
@@ -88,7 +89,9 @@ export default function Home(props) {
             <AddBusinessIcon style={{color:'#27241D', fontSize:'50px',backgroundColor:'#C1F2C7', padding:'6px', borderRadius:'10px'}}/>
               <h3 style={{color:'#51CA58'}}>Branding</h3>
             <p style={{color:'#fff'}}>As a cannabis business grows, a software can easily scale with the business. </p>
-            <button className={styles.learn_more_btn}>learn more</button>
+            <Link href="/services/#service_brand" scroll={true}>
+              <button className={styles.learn_more_btn}>learn more</button>
+            </Link>
             </div>
           </div>
         </SwiperSlide>

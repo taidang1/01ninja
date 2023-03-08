@@ -26,21 +26,29 @@ const becomeapartner = () => {
             howCanWeHelp,
             hearAboutUs
         })
+        setCompanyName('')
+        setWebsiteURL('')
+        setFirstName('')
+        setLastName('')
+        setBusinessEmail('')
+        setPhoneNumber('')
+        setHowCanWeHelp('')
+        setHearAboutUs('')
     }
 
-    useEffect(() => {
-        if (response.success) {
-            console.log('ok')
-            setCompanyName('1')
-            setWebsiteURL('')
-            setFirstName('')
-            setLastName('')
-            setBusinessEmail('')
-            setPhoneNumber('')
-            setHowCanWeHelp('')
-            setHearAboutUs('')
-        }
-    }, [response.success])
+    // useEffect(() => {
+    //     if (response.success) {
+    //         console.log('ok')
+    //         setCompanyName('')
+    //         setWebsiteURL('')
+    //         setFirstName('')
+    //         setLastName('')
+    //         setBusinessEmail('')
+    //         setPhoneNumber('')
+    //         setHowCanWeHelp('')
+    //         setHearAboutUs('')
+    //     }
+    // }, [response.success])
 
     return (
         <div className={styles.join_us}>
