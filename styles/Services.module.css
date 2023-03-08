@@ -24,6 +24,11 @@
 }
 .service_overview{
     height:70vh;
+    background-color:  #C1F2C7;
+}
+.service_overview_wrap{
+    margin:60px;
+    padding-top: 60px;
 }
 .service_btn{
  background-color:  #51CA58;
@@ -40,4 +45,41 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
 .service_btn:active{
     box-shadow: none;
+}
+.service_brand{
+    height: 80vh;
+   
+    background-color: #E8E6E1;
+    margin-left: 60px;
+
+}
+.service_brand_wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   
+}
+.service_brand_text{
+    padding: 60px;
+}
+.overview_wrap_one{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:60px;
+}
+.overview_wrap_two{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:60px;
+}
+.service_ecommerce{
+    height: 80vh;
+    background-color: #E8E6E1;
+    
+}
+.service_ecommerce_img{
+    height: 500px;
+    width:auto;
 }
