@@ -83,3 +83,32 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     height: 500px;
     width:auto;
 }
+
+.service_custom{
+    height: 80vh;
+    background-color: #E8E6E1;
+    margin-left: 60px;
+}
+.service_cms{
+    height: 80vh;
+    width: 100%;
+    background-color: #E8E6E1;
+    margin-left: 60px;
+}
+.service_cms_img{
+    height: 500px;
+    width:auto;
+}
+.service_support{
+height: 80vh;
+width: auto;
+}
+.service_analytics_img{
+    height: 500px;
+    width: auto;
+}
+.service_analytics{
+    height: 80vh;
+    background-color: #E8E6E1;
+    margin-left: 60px;
+}

@@ -56,6 +56,19 @@ const services = () => {
                 <img className={styles.service_ecommerce_img} src="service_cart.png" alt="ecommerce" />
 <h2> ecommerce</h2>
        </div>
+       <div className={styles.service_custom}>
+       <video style={{width:'auto', height:'450px'}} source src="/service_three.mp4" autoPlay loop muted></video>
+       </div>
+       <div className={styles.service_cms}>
+<img className={styles.service_cms_img} src="service_cms.png" alt="cms" />
+       </div>
+       <div className={styles.service_support}>
+       <video style={{width:'auto', height:'550px'}} source src="/service_support.mp4" autoPlay loop muted></video>
+
+       </div>
+       <div className={styles.service_analytics}>
+         <img className={styles.service_analytics_img} src="service_analytics.png" alt="analytics" />
+       </div>
         </div>
     );
 }
