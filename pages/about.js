@@ -1,5 +1,7 @@
 import styles from '../styles/About.module.css';
-
+import BalanceIcon from '@mui/icons-material/Balance';
+import PsychologyIcon from '@mui/icons-material/Psychology';
+import ScienceIcon from '@mui/icons-material/Science';
 
 
 const about = () => {
@@ -15,15 +17,27 @@ const about = () => {
                 <div className={styles.about_two_wrap}>
                    
                     <div className={styles.about_two_one}>
-                        <p>Authenticity</p>
+                        <BalanceIcon style={{fontSize:'40px', color:'#000', backgroundColor:'#51CA58', padding:'12px', fontSize:'58px', borderRadius:'10px', marginRight:'20px'}}/>
+                        <div style={{display:'flex', flexDirection:'column'}}>
+                        <p style={{paddingBottom:'12px'}}>Authenticity</p>
+                       
+                     <p>Our team is driven by a shared commitment to truth and authenticity. what you see is what you get</p>
+                     </div>
                         </div>
                         <div className={styles.about_two_two}>
-                            <p>Functional Quality</p>
+                            <PsychologyIcon style={{fontSize:'40px', color:'#000', backgroundColor:'#51CA58', padding:'12px', fontSize:'58px', borderRadius:'10px', margin:'0 20px'}}/>
+                            <div style={{display:'flex', flexDirection:'column'}}>
+                            <p style={{paddingBottom:'12px'}}>Functional Quality</p>
+                            <p>we are dedicated to providing our clients with the most powerful and reliable software solutions available</p>
+                            </div>
                     </div>
                     <div className={styles.about_two_three}>
-                        <p>Innovation</p>
+                        <ScienceIcon style={{fontSize:'40px', color:'#000', backgroundColor:'#51CA58', padding:'12px', fontSize:'58px', borderRadius:'10px', margin:'0 20px'}}/>
+                        <div  style={{display:'flex', flexDirection:'column'}}>
+                        <p style={{paddingBottom:'12px'}}>Innovation</p>
+                        <p>we are committed to helping businesses in the industry achieve their full potential through the use of innovative software.</p>
                         </div>
-                      
+                        </div>
                 </div>
         </div>
         </div>

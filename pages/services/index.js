@@ -1,6 +1,6 @@
 import styles from '../../styles/Services.module.css';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import {motion} from 'framer-motion'
+import {motion} from 'framer-motion';
 
 
 const services = () => {
@@ -39,7 +39,7 @@ const services = () => {
                 </div>
             </div>
             <div className={styles.service_brand} id="service_brand">
-                <motion.div initial={{y:200, opacity:0}} whileInView={{y:0, opacity:1}} viewport={{once:false}} transition={{delay:.1, duration:.4}} className={styles.service_brand_wrapper}>
+                <motion.div initial={{y:150, opacity:0}} whileInView={{y:0, opacity:1}} viewport={{once:false}} transition={{delay:.1, duration:.4}} className={styles.service_brand_wrapper}>
                 <div className={styles.service_brand_text}>
                     <h2 >We help build your brand</h2>
                     <p style={{paddingTop:'12px'}}>We help you build your brand and grow your business. Dont settle for someone elses brand, make yours unique</p>
@@ -54,7 +54,7 @@ const services = () => {
       
             </div>
             <div className={styles.service_ecommerce}>
-                <motion.div initial={{y:200, opacity:0}} whileInView={{y:0, opacity:1}} viewport={{once:false}} transition={{delay:.1, duration:.4}} className={styles.service_ecommerce_wrap}>
+                <motion.div initial={{y:150, opacity:0}} whileInView={{y:0, opacity:1}} viewport={{once:false}} transition={{delay:.1, duration:.4}} className={styles.service_ecommerce_wrap}>
                 <img className={styles.service_ecommerce_img} src="service_cart.png" alt="ecommerce" />
                 <div className={styles.service_ecommerce_text}>
 <h2>Sophisticated & scalable commerce</h2>
@@ -67,6 +67,7 @@ const services = () => {
       </motion.div>
        </div>
        <div className={styles.service_custom}>
+        <motion.div  initial={{y:150, opacity:0}} whileInView={{y:0, opacity:1}} viewport={{once:false}} transition={{delay:.1, duration:.4}} className={styles.service_custom_wrap}>
         <div className={styles.service_custom_text}>
         <h2>Custom software development</h2>
         <p style={{paddingTop:'12px'}}>have complete control over every aspect of your code. Fine-tuned code to meet specific requirements or optimize performance</p>
@@ -76,8 +77,10 @@ const services = () => {
       </div>
         </div>
        <video style={{width:'auto', height:'400px'}} source src="/service_three.mp4" autoPlay loop muted></video>
+       </motion.div>
        </div>
        <div className={styles.service_cms}>
+        <motion.div initial={{y:150, opacity:0}} whileInView={{y:0, opacity:1}} viewport={{once:false}} transition={{delay:.1, duration:.4}} className={styles.service_cms_wrap}>
        <div className={styles.service_cms_text}>
 <h2>A content management system CMS</h2>
 <p style={{paddingTop:'12px'}}>CMS software is designed to be user-friendly, with an intuitive interface that makes it easy for non-technical users to create and manage content. This means that users can focus on creating content, rather than worrying about the technical details of how to publish it. </p>
@@ -87,9 +90,11 @@ const services = () => {
       </div>
 </div>
 <img className={styles.service_cms_img} src="service_cms.png" alt="cms" />
+      </motion.div>
 
        </div>
        <div className={styles.service_support}>
+        <motion.div initial={{y:150, opacity:0}} whileInView={{y:0, opacity:1}} viewport={{once:false}} transition={{delay:.1, duration:.4}} className={styles.service_support_wrap}>
         <div className={styles.service_support_text}>
             <h2>Unlimited customer support & training</h2>
             <p style={{paddingTop:'12px'}}>Always here for you, around the clock IT support! Faster response times and more immediate assistance</p>
@@ -99,9 +104,10 @@ const services = () => {
       </div>
         </div>
        <video style={{width:'auto', height:'550px'}} source src="/service_support.mp4" autoPlay loop muted></video>
-
+       </motion.div>
        </div>
        <div className={styles.service_analytics}>
+        <motion.div initial={{y:150, opacity:0}} whileInView={{y:0, opacity:1}} viewport={{once:false}} transition={{delay:.1, duration:.4}} className={styles.service_analytics_wrap}>
          <img className={styles.service_analytics_img} src="service_analytics.png" alt="analytics" />
             <div className={styles.service_analytics_text}>
             <h2>Analytics & reporting</h2>
@@ -111,6 +117,7 @@ const services = () => {
      <ArrowForwardIosIcon style={{fontSize:'16px', marginLeft:'12px'}}/>
       </div>
       </div>
+         </motion.div>
        </div>
         </div>
     );

@@ -42,25 +42,34 @@
     justify-content: space-around;
 }
 .about_two_one{
+    padding:20px;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
     height:200px;
-    width: 300px;
+    width: 360px;
     background-color:  #FAF9F7;
     border-radius: 25px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .about_two_two{
     height:200px;
-    width: 300px;
+    width: 360px;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
     background-color:  #FAF9F7;
     border-radius: 25px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .about_two_three{
     height:200px;
-    width: 300px;
+    width: 360px;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
     background-color:  #FAF9F7;
     border-radius: 25px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
 }

@@ -93,6 +93,9 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 .service_custom{
     height: 80vh;
     background-color: #E8E6E1;
+ 
+}
+.service_custom_wrap{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -109,13 +112,17 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     height: auto;
     width: 100%;
     background-color: #D3CEC4;
+
+    
+}
+.service_cms_wrap{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 60px 0px;
-    
 }
+
 .service_cms_img{
     height: 400px;
     width:auto;
@@ -129,10 +136,14 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 .service_support{
 height: 80vh;
 width: auto;
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center;
+
+
+}
+.service_support_wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 .service_support_text{
     width: 40%;
@@ -148,6 +159,9 @@ justify-content: center;
 .service_analytics{
     height: 80vh;
     background-color: #E8E6E1;
+
+}
+.service_analytics_wrap{
     display: flex;
     flex-direction: row;
     align-items: center;
