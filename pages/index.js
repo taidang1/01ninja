@@ -22,7 +22,8 @@ import PaidIcon from '@mui/icons-material/Paid';
 import "swiper/css/grid";
 import AssuredWorkloadIcon from '@mui/icons-material/AssuredWorkload';
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
-import Link from 'next/link'
+import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 
 export default function Home(props) {
@@ -42,6 +43,7 @@ export default function Home(props) {
       </div>
     </div>
     <div className={styles.home2}>
+      <motion.div initial={{y:200, opacity:0}} whileInView={{y:0, opacity:1}} viewport={{once:false}} transition={{delay:.1, duration:.4}}  className={styles.home2_wrap}>
       <div className={styles.home2_text}>
 <h2>Experience the power of software.</h2>
 
@@ -51,7 +53,8 @@ export default function Home(props) {
      <ArrowForwardIosIcon style={{fontSize:'16px', marginLeft:'12px'}}/>
       </div>
       </div>
-      <video style={{width:'auto', height:'550px'}} source src="/home2_video.mp4" autoPlay loop muted></video>
+      <video style={{width:'auto', height:'500px'}} source src="/home2_video.mp4" autoPlay loop muted></video>
+      </motion.div>
       </div>
       <div className={styles.home3}>
         <div className={styles.home3_wrap}>
