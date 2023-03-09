@@ -4,10 +4,13 @@
 }
 .about_header{
     height: 70vh;
-    padding-top: 90px;
+    padding-top: 130px;
     width: 100%;
     position: relative;
     background-color: #E8E6E1;
+   
+}
+.about_header_wrap{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,10 +32,9 @@
     box-shadow: none;
 }
 .about_two{
-    height: 80vh;
+    height: 65vh;
     width: 100%;
     background-color: #E8E6E1;
- 
  
 }
 .about_two_wrap{
@@ -40,6 +42,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    border-bottom: solid 1px #857F72;
+height:auto;
+padding-bottom: 60px;
 }
 .about_two_one{
     padding:20px;
@@ -52,6 +57,11 @@
     border-radius: 25px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
+.about_two_one:hover{
+   background-color: #C1F2C7;
+   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+            transition: ease-in-out .2s;
+}
 .about_two_two{
     height:200px;
     width: 360px;
@@ -61,6 +71,11 @@
     background-color:  #FAF9F7;
     border-radius: 25px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.about_two_two:hover{
+    background-color: #C1F2C7;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+                transition: ease-in-out .2s;
 }
 .about_two_three{
     height:200px;
@@ -72,4 +87,9 @@
     border-radius: 25px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
+}
+.about_two_three:hover{
+    background-color: #C1F2C7;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+                transition: ease-in-out .2s;
 }
