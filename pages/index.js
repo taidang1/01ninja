@@ -92,7 +92,7 @@ export default function Home(props) {
             <AddBusinessIcon style={{color:'#27241D', fontSize:'50px',backgroundColor:'#C1F2C7', padding:'6px', borderRadius:'10px'}}/>
               <h3 style={{color:'#51CA58'}}>Branding</h3>
             <p style={{color:'#fff'}}>As a cannabis business grows, a software can easily scale with the business. </p>
-            <Link href="/services/#service_brand" scroll={true}>
+            <Link href="/services#service_brand" scroll={true}>
               <button className={styles.learn_more_btn}>learn more</button>
             </Link>
             </div>

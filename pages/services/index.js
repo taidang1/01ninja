@@ -1,7 +1,8 @@
 import styles from '../../styles/Services.module.css';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import {motion} from 'framer-motion';
-
+import BalanceIcon from '@mui/icons-material/Balance';
+import Link from 'next/link';
 
 const services = () => {
     return (
@@ -44,8 +45,10 @@ const services = () => {
                     <h2 >We help build your brand</h2>
                     <p style={{paddingTop:'12px'}}>We help you build your brand and grow your business. Dont settle for someone elses brand, make yours unique</p>
                     <div style={{display:'flex', alignItems:'center', paddingTop:'20px'}}>
-      <a style={{textDecoration:'underline', textDecorationColor:'#51CA58', fontWeight:'550', textDecorationThickness:'3px', textUnderlineOffset:'6px'}}>Learn more</a>
+                        <Link style={{textDecoration:'underline', textDecorationColor:'#51CA58', fontWeight:'550', textDecorationThickness:'3px', textUnderlineOffset:'6px'}} href="/services/brand">
+                            <p>learn more</p>
      <ArrowForwardIosIcon style={{fontSize:'16px', marginLeft:'12px'}}/>
+      </Link>
       </div>
                 </div>
             <video style={{width:'auto', height:'450px'}} source src="/service_brand.mp4" autoPlay loop muted></video>
