@@ -63,8 +63,10 @@ const services = () => {
 <h2>Sophisticated & scalable commerce</h2>
 <p style={{paddingTop:'12px'}}>We offer a powerful and flexible e-commerce platform that provides a lot of features and customization options.</p>
 <div style={{display:'flex', alignItems:'center', paddingTop:'20px'}}>
-      <a style={{textDecoration:'underline', textDecorationColor:'#51CA58', fontWeight:'550', textDecorationThickness:'3px', textUnderlineOffset:'6px'}}>Learn more</a>
+                        <Link style={{textDecoration:'underline', textDecorationColor:'#51CA58', fontWeight:'550', textDecorationThickness:'3px', textUnderlineOffset:'6px'}} href="/services/ecommerce">
+                            <p>learn more</p>
      <ArrowForwardIosIcon style={{fontSize:'16px', marginLeft:'12px'}}/>
+      </Link>
       </div>
 </div>
       </motion.div>
