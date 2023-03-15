@@ -39,16 +39,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/services.js"
-    ],
-    "/services/brand": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/services/brand.js"
-    ],
-    "/services/ecommerce": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/services/ecommerce.js"
     ]
   },
   "ampFirstPages": []
