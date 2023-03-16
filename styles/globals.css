@@ -55,3 +55,13 @@ h2{
     font-family: 'Open Sans', sans-serif;
 
 }
+h3{
+  font-size: 1.1em;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.4;
+  font-family: 'Open Sans', sans-serif;
+  color:#1D1A13;
+  letter-spacing: -0.01em;
+  padding-bottom: 12px;
+}

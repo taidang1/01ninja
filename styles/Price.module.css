@@ -2,13 +2,24 @@
     height:auto;
     padding-top: 120px;
 }
+.price_est{
+    height: auto;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+}
 .pricing_wrap{
     display: flex;
     flex-direction: row;
 justify-content: center;
 align-items: center;
-padding: 90px 0;
 
+
+}
+.price_est_text{
+    width: 50%;
+    margin: 30px 200px;
+    padding-bottom: 30px;
 }
 .price_hero{
     display: flex;
@@ -42,24 +53,40 @@ padding: 90px 0;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     
 }
+
 .price_box_one{
-    width: 250px;
-    height: 400px;
+    width: 300px;
+    height: 500px;
     background-color: #FAF9F7;
     margin: 12px;
     border-radius: 25px;
+    
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
+.box_one_features{
+    overflow: auto;
+    max-height: 350px;
+}
+.box_one_features li{
+    padding-bottom: 10px;
+}
 .price_box_two{
-    width: 250px;
-    height: 450px;
+    width: 300px;
+    height: 550px;
     background-color: #FAF9F7;
     border-radius: 25px;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
+.box_two_features{
+    overflow: auto;
+    max-height: 400px;
+}
+.box_two_features li{
+    padding-bottom: 10px;
+}
 .price_box_three{
-    width: 250px;
-    height: 400px;
+    width: 300px;
+    height: 500px;
     background-color: #FAF9F7;
     margin: 12px;
     border-radius: 25px;
@@ -82,6 +109,7 @@ padding: 90px 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .box_three_price{
     height: 150px;
@@ -110,6 +138,53 @@ padding: 90px 0;
 
 
 .techstack_redirect{
-    height: 60vh;
-    position: relative;
+    height: 55vh;
+  
+    background-color: #C1F2C7;
+}
+.techstack_redirect_wrap{
+  padding: 30px 90px;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.techstack_redirect_btn{
+    padding:16px 18px;
+    border-radius:25px;
+    border:none;
+    display:flex;
+    align-items: center;
+    font-size: 1.2em;
+    color: #1D1A13;
+    font-weight: 500;
+    background-color: #51CA58;
+    margin-top:20px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
+}
+.techstack_redirect_text{
+
+    width: 90%;
+}
+.price_overview{
+    height: auto;
+    width: 100%;
+}
+.price_overview_wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 90px 60px;
+}
+.price_overview_text{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    
+}
+.price_overview_video{
+    height:500px;
+    width: auto;
 }

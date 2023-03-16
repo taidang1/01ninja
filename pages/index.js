@@ -24,6 +24,21 @@ import AssuredWorkloadIcon from '@mui/icons-material/AssuredWorkload';
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import Rating from '@mui/material/Rating';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import { styled } from '@mui/material/styles';
+import Diversity1Icon from '@mui/icons-material/Diversity1';
+
+const StyledRating = styled(Rating)({
+  '& .MuiRating-iconFilled': {
+    color: '#F86A6A',
+  },
+  '& .MuiRating-iconHover': {
+    color: '#E12D39',
+  },
+});
 
 
 export default function Home(props) {
@@ -207,45 +222,58 @@ export default function Home(props) {
          style={{ borderRadius:'25px', }}
           >
         <SwiperSlide style={{borderRadius:'25px'}}>
+        <div className={styles.swiper_backdrop}></div>
+
           <img
             className={styles.swiper_slide_image}
-            src="https://studio.swiperjs.com/demo-images/models/01.jpg"
+            src="software_one.png"
           />
+             <div className={styles.software_img_text}>
+          <p style={{fontSize:'24px', fontWeight:'500', textShadow: '.1em .1em .1em #000', color:'#FAF9F7'}}>"software to automate tasks and improve processes can see productivity gains of up to 30%"</p>
+          
+          </div>
 
         </SwiperSlide>
         <SwiperSlide style={{borderRadius:'25px'}}>
+          <div className={styles.swiper_backdrop}></div>
           <img
           className={styles.swiper_slide_image}
-            src="https://studio.swiperjs.com/demo-images/models/02.jpg"
+            src="software_two.png"
           />
-
+          <div className={styles.software_img_text}>
+          <p style={{fontSize:'24px', fontWeight:'500', textShadow: '.1em .1em .1em #000', color:'#FAF9F7'}}>"businesses that use software to enable digital transformation can see revenue growth of up to 34%"</p>
+          
+          </div>
       
         </SwiperSlide >
 
         <SwiperSlide style={{borderRadius:'25px'}}>
+        <div className={styles.swiper_backdrop}></div>
           <img
           className={styles.swiper_slide_image}
-            src="https://studio.swiperjs.com/demo-images/models/03.jpg"
+            src="software_three.png"
           />
-
+ <div className={styles.software_img_text}>
+          <p style={{fontSize:'24px', fontWeight:'500', textShadow: '.1em .1em .1em #000', color:'#FAF9F7'}}>"software to analyze data can make more informed decisions, resulting in a 10% increase in ROI"</p>
+          
+          </div>
+      
         </SwiperSlide>
 
         <SwiperSlide style={{borderRadius:'25px'}}>
+        <div className={styles.swiper_backdrop}></div>
           <img
            className={styles.swiper_slide_image}
-            src="https://studio.swiperjs.com/demo-images/models/04.jpg"
+            src="software_four.png"
           />
-
+ <div className={styles.software_img_text}>
+          <p style={{fontSize:'24px', fontWeight:'500', textShadow: '.1em .1em .1em #000', color:'#FAF9F7'}}>"businesses that use software to personalize the customer experience can see a 15% increase in customer satisfaction"</p>
+          
+          </div>
+      
         </SwiperSlide>
 
-        <SwiperSlide style={{borderRadius:'25px'}}>
-          <img
-     className={styles.swiper_slide_image}
-            src="https://studio.swiperjs.com/demo-images/models/05.jpg"
-          />
 
-
-        </SwiperSlide>
 
        
       </Swiper>
@@ -275,43 +303,57 @@ export default function Home(props) {
         className={styles.swiper_tech}
       >
         <SwiperSlide className={styles.swiper_slider_tech}>
+          <div className={styles.swipe_tech_wrap}>
           <img className={styles.tech_img} src="mongodb_icon.png" alt="mongo" />
           <p>MongoDB</p>
+          </div>
         </SwiperSlide>
         <SwiperSlide className={styles.swiper_slider_tech}>
+        <div className={styles.swipe_tech_wrap}>
         <img className={styles.tech_img} src="aws_ec2.png" alt="aws ec2" />
         <p>Aws Ec2</p>
+        </div>
         </SwiperSlide>
         <SwiperSlide className={styles.swiper_slider_tech}>
+        <div className={styles.swipe_tech_wrap}>
         <img className={styles.tech_img} src="aws_icon.png" alt="aws " />
         <p>AWS</p>
-        
+        </div>
         </SwiperSlide>
         <SwiperSlide className={styles.swiper_slider_tech}>Slide 4</SwiperSlide>
         <SwiperSlide className={styles.swiper_slider_tech}>
+        <div className={styles.swipe_tech_wrap}>
         <img className={styles.tech_img} src="nextjs.png" alt="next js" />
         <p>Next Js</p>
+        </div>
         </SwiperSlide>
         <SwiperSlide className={styles.swiper_slider_tech}>Slide 6</SwiperSlide>
         <SwiperSlide className={styles.swiper_slider_tech}>
+        <div className={styles.swipe_tech_wrap}>
         <img className={styles.tech_img} src="js_icon.png" alt="next js" />
         <p>JavaScript</p>
+        </div>
         </SwiperSlide>
         <SwiperSlide className={styles.swiper_slider_tech}>Slide 8</SwiperSlide>
         <SwiperSlide className={styles.swiper_slider_tech}>
+        <div className={styles.swipe_tech_wrap}>
         <img className={styles.tech_img} src="medusajs_icon.png" alt="next js" />
         <p>Medusa Js</p>
+        </div>
         </SwiperSlide>
         <SwiperSlide className={styles.swiper_slider_tech}>Slide 9</SwiperSlide>
         <SwiperSlide className={styles.swiper_slider_tech}>
+        <div className={styles.swipe_tech_wrap}>
         <img className={styles.tech_img} src="react_icon.svg" alt="next js" />
         <p>React Js</p>
+        </div>
         </SwiperSlide>
         <SwiperSlide className={styles.swiper_slider_tech}>Slide 9</SwiperSlide>
         <SwiperSlide className={styles.swiper_slider_tech}>
+        <div className={styles.swipe_tech_wrap}>
         <img className={styles.tech_img} src="openai_icon.png" alt="next js" />
         <p>Open AI</p>
-
+        </div>
         </SwiperSlide>
         <SwiperSlide className={styles.swiper_slider_tech}>Slide 9</SwiperSlide>
         <SwiperSlide className={styles.swiper_slider_tech}>Slide 9</SwiperSlide>
@@ -324,7 +366,7 @@ export default function Home(props) {
         </div>
         <div className={styles.home5}>
           <div className={styles.home5_text}>
-          <h2 style={{textAlign:'center'}}>Our customers rave!</h2>
+          <h2 style={{textAlign:'left'}}>What people say about us!</h2>
         
           </div>
         <Swiper
@@ -336,15 +378,99 @@ export default function Home(props) {
         modules={[FreeMode]}
         className={styles.swiper_five}
       >
-        <SwiperSlide className={styles.swiper_slider_five}>Slide 1</SwiperSlide>
-        <SwiperSlide className={styles.swiper_slider_five}>Slide 2</SwiperSlide>
-        <SwiperSlide className={styles.swiper_slider_five}>Slide 3</SwiperSlide>
-        <SwiperSlide className={styles.swiper_slider_five}>Slide 4</SwiperSlide>
-        <SwiperSlide className={styles.swiper_slider_five}>Slide 5</SwiperSlide>
-        <SwiperSlide className={styles.swiper_slider_five}>Slide 6</SwiperSlide>
-        <SwiperSlide className={styles.swiper_slider_five}>Slide 7</SwiperSlide>
-        <SwiperSlide className={styles.swiper_slider_five}>Slide 8</SwiperSlide>
-        <SwiperSlide className={styles.swiper_slider_five}>Slide 9</SwiperSlide>
+        <SwiperSlide className={styles.swiper_slider_five}>
+          <div className={styles.slider_five_wrap}>
+            <div style={{display:'flex', flexDirection:'row', alignItems:'center', paddingBottom:'6px'}}>
+          <AccountCircleIcon style={{fontSize:'40px', color:'#51CA58', fontSize:'38px',}}/>
+          <p style={{paddingLeft:'6px', fontWeight:'500'}}>Lily Chen</p>
+          </div>
+          <StyledRating
+          size="small"
+        name="customized-color"
+        defaultValue={5}
+        getLabelText={(value) => `${value} Heart${value !== 1 ? 's' : ''}`}
+        precision={0.5}
+        icon={<FavoriteIcon fontSize="inherit" />}
+        emptyIcon={<FavoriteBorderIcon fontSize="inherit" />}
+      />
+          <p style={{paddingTop:'12px', textAlign:'left'}}>"I've been using this software for my dispensary for a few months now, and it's been a game-changer. The inventory management system is incredibly easy to use and has helped us keep track of our orders."</p>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className={styles.swiper_slider_five}>
+        <div className={styles.slider_five_wrap}>
+        <div style={{display:'flex', flexDirection:'row', alignItems:'center', paddingBottom:'6px'}}>
+          <AccountCircleIcon style={{fontSize:'40px', color:'#51CA58', fontSize:'38px',}}/>
+          <p style={{paddingLeft:'12px', fontWeight:'500'}}>Marcus Rivera</p>
+          </div>
+          <StyledRating
+          size="small"
+        name="customized-color"
+        defaultValue={5}
+        getLabelText={(value) => `${value} Heart${value !== 1 ? 's' : ''}`}
+        precision={0.5}
+        icon={<FavoriteIcon fontSize="inherit" />}
+        emptyIcon={<FavoriteBorderIcon fontSize="inherit" />}
+      />
+          <p style={{paddingTop:'12px', textAlign:'left'}}>"I was looking for a software solution that would help me manage my operations more efficiently. This software has been a godsend - the reporting and analytics tools are top-notch, and I can easily track everything"</p>
+        </div>
+        </SwiperSlide>
+        <SwiperSlide className={styles.swiper_slider_five}>
+        <div className={styles.slider_five_wrap}>
+        <div style={{display:'flex', flexDirection:'row', alignItems:'center', paddingBottom:'6px'}}>
+          <AccountCircleIcon style={{fontSize:'40px', color:'#51CA58', fontSize:'38px',}}/>
+          <p style={{paddingLeft:'12px', fontWeight:'500'}}>Sadie Jackson</p>
+          </div>
+                    <StyledRating
+                    size="small"
+        name="customized-color"
+        defaultValue={5}
+        getLabelText={(value) => `${value} Heart${value !== 1 ? 's' : ''}`}
+        precision={0.5}
+        icon={<FavoriteIcon fontSize="inherit" />}
+        emptyIcon={<FavoriteBorderIcon fontSize="inherit" />}
+      />
+          
+          <p style={{paddingTop:'12px', textAlign:'left'}}>"I've tried a few different cannabis software solutions in the past, but this one stands out for its ease of use and customer support. Whenever I have a question or issue, the support team is quick to respond and always helpful."</p>
+        </div>
+        </SwiperSlide>
+        <SwiperSlide className={styles.swiper_slider_five}>
+        <div className={styles.slider_five_wrap}>
+        <div style={{display:'flex', flexDirection:'row', alignItems:'center', paddingBottom:'6px'}}>
+          <AccountCircleIcon style={{fontSize:'40px', color:'#51CA58', fontSize:'38px',}}/>
+          <p style={{paddingLeft:'12px', fontWeight:'500'}}>Victor Nguyen</p>
+          </div>
+                    <StyledRating
+                    size="small"
+        name="customized-color"
+        defaultValue={5}
+        getLabelText={(value) => `${value} Heart${value !== 1 ? 's' : ''}`}
+        precision={0.5}
+        icon={<FavoriteIcon fontSize="inherit" />}
+        emptyIcon={<FavoriteBorderIcon fontSize="inherit" />}
+      />
+          <p style={{paddingTop:'12px', textAlign:'left'}}>"If you're running a cannabis business, you need this software. They've helped me reach new customers and grow my brand in ways I never thought possible. 10/10!"</p>
+        </div>
+        </SwiperSlide>
+        <SwiperSlide className={styles.swiper_slider_five}>
+        <div className={styles.slider_five_wrap}>
+        <div style={{display:'flex', flexDirection:'row', alignItems:'center', paddingBottom:'6px'}}>
+          <AccountCircleIcon style={{fontSize:'40px', color:'#51CA58', fontSize:'38px',}}/>
+          <p style={{paddingLeft:'12px', fontWeight:'500'}}>Maya Patel</p>
+          </div>
+                    <StyledRating
+                    size="small"
+        name="customized-color"
+        defaultValue={5}
+        getLabelText={(value) => `${value} Heart${value !== 1 ? 's' : ''}`}
+        precision={0.5}
+        icon={<FavoriteIcon fontSize="inherit" />}
+        emptyIcon={<FavoriteBorderIcon fontSize="inherit" />}
+      />
+          <p style={{paddingTop:'12px', textAlign:'left'}}>"This software has helped me take my dispensary to the next level. The inventory management system is a lifesaver, and the reporting and analytics tools have given me invaluable insights into my business"</p>
+       </div>
+        </SwiperSlide>
+
+
       </Swiper>
           </div>
           <div className={styles.home6}>

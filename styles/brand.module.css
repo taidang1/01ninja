@@ -68,3 +68,30 @@
     border-radius: 25px;
     padding: 20px;
 }
+.brand_three{
+    height: 80vh;
+    background-color: #E8E6E1;
+   
+    padding: 60px 0;
+    padding-left: 60px;
+    padding-right: 20px;
+}
+.brand_three_wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+  
+}
+.brand_three_img{
+    height: 350px;
+    width: auto;
+}
+.brand_three_text{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    
+   
+}

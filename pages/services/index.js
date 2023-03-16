@@ -3,6 +3,11 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import {motion} from 'framer-motion';
 import BalanceIcon from '@mui/icons-material/Balance';
 import Link from 'next/link';
+import HandshakeIcon from '@mui/icons-material/Handshake';
+import GppGoodIcon from '@mui/icons-material/GppGood';
+import AcUnitIcon from '@mui/icons-material/AcUnit';
+import EmojiObjectsIcon from '@mui/icons-material/EmojiObjects';
+
 
 const services = () => {
     return (
@@ -22,19 +27,36 @@ const services = () => {
                     <p style={{fontWeight:'450', paddingBottom:'12px'}}>Our competitive software services</p>
                 <h2>All in one place for your canna business</h2>
                 <div className={styles.overview_wrap_one}>
+                    <div style={{display:'flex', flexDirection:'row', alignItems:'center'}}>
+                    <HandshakeIcon style={{fontSize:'40px', color:'#51CA58', backgroundColor:'#27241D', padding:'12px', fontSize:'58px', borderRadius:'10px', marginRight:'20px'}}/>
                 <div className={styles.overview_box_one}>
+                   
                 <h3>Transparency</h3>
+                <p>we commit to being transparent in every aspect of our operations, from our code to our business practices.</p>
                 </div>
+                </div>
+                <div style={{display:'flex', flexDirection:'row', alignItems:'center'}}>
+                    <GppGoodIcon style={{fontSize:'40px', color:'#51CA58', backgroundColor:'#27241D', padding:'12px', fontSize:'58px', borderRadius:'10px', marginRight:'20px'}}/>
                 <div className={styles.overview_box_two}>
                     <h3>Quality of code</h3>
+                    <p>Custom code is developed specifically for your website or application, so there's less risk of compatibility issues arising.</p>
+                </div>
                 </div>
                 </div>
                 <div className={styles.overview_wrap_two}>
+                <div style={{display:'flex', flexDirection:'row', alignItems:'center'}}>
+                <AcUnitIcon style={{fontSize:'40px', color:'#51CA58', backgroundColor:'#27241D', padding:'12px', fontSize:'58px', borderRadius:'10px', marginRight:'20px'}}/>
                 <div className={styles.overview_box_three}>
                     <h3>Not relying on third parties</h3>
+                 <p>custom code is often the better choice for businesses and organizations that require a high level of security, flexibility, performance, and support.</p>
                 </div>
+                </div>
+                <div style={{display:'flex', flexDirection:'row', alignItems:'center'}}>
+                    <EmojiObjectsIcon style={{fontSize:'40px', color:'#51CA58', backgroundColor:'#27241D', padding:'12px', fontSize:'58px', borderRadius:'10px', marginRight:'20px'}}/>
                 <div className={styles.overview_box_four}>
                     <h3>Imagination is the limit</h3>
+                    <p>have the ability to create unique features and capabilities that are tailored specifically to your needs.</p>
+                </div>
                 </div>
                </div>
                 </div>
@@ -77,8 +99,10 @@ const services = () => {
         <h2>Custom software development</h2>
         <p style={{paddingTop:'12px'}}>have complete control over every aspect of your code. Fine-tuned code to meet specific requirements or optimize performance</p>
         <div style={{display:'flex', alignItems:'center', paddingTop:'20px'}}>
-      <a style={{textDecoration:'underline', textDecorationColor:'#51CA58', fontWeight:'550', textDecorationThickness:'3px', textUnderlineOffset:'6px'}}>Learn more</a>
+                        <Link style={{textDecoration:'underline', textDecorationColor:'#51CA58', fontWeight:'550', textDecorationThickness:'3px', textUnderlineOffset:'6px'}} href="/services/custom">
+                            <p>learn more</p>
      <ArrowForwardIosIcon style={{fontSize:'16px', marginLeft:'12px'}}/>
+      </Link>
       </div>
         </div>
        <video style={{width:'auto', height:'400px'}} source src="/service_three.mp4" autoPlay loop muted></video>

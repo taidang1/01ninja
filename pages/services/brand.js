@@ -38,6 +38,17 @@ const brand = () => {
                     </div>
 
             </div>
+            <div className={styles.brand_three}>
+                <div className={styles.brand_three_wrap}>
+                    <div className={styles.brand_three_text}> 
+                    <h2 style={{paddingBottom:'20px'}}>Bringing your digital brand to life</h2>
+                    <p style={{paddingBottom:'12px'}}>In house designers to implement your branding needs native to our technologies</p>
+                    <p>Our design team is at your service to craft a digital experience only unique to your brand</p>
+                    </div>
+                    <img className={styles.brand_three_img} src="/brand_custom.png" alt="brand" />
+
+            </div>
+            </div>
         </div>
     );
 }

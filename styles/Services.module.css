@@ -66,13 +66,27 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin:60px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+
+}
+.overview_box_one{
+    width:300px;
+}
+.overview_box_two{
+    width:300px;
+}
+.overview_box_three{
+    width:300px;
 }
 .overview_wrap_two{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin:60px;
+   
+}
+.overview_box_four{
+    width:300px;
 }
 .service_ecommerce{
     height: 80vh;
