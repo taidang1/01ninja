@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useFirestore } from "../hooks/useFirestore";
 import styles from "../styles/Join.module.css";
+import { motion } from "framer-motion";
 
 const becomeapartner = () => {
   const [companyName, setCompanyName] = useState("");
@@ -47,7 +48,10 @@ const becomeapartner = () => {
       <h3 style={{ fontSize: "1.618em", fontWeight: "400" }}>
         Request a call and demo with us!
       </h3>
-      <div className={styles.join_form}>
+      <motion.div    initial={{ y: 200, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{ delay: 0.1, duration: 0.4 }} className={styles.join_form}>
         <form onSubmit={handleSubmit}>
           <div>
             <label style={{ display: "flex", flexDirection: "column" }}>
@@ -137,7 +141,7 @@ const becomeapartner = () => {
           <button className={styles.join_submit}>Submit</button>
           </div>
         </form>
-      </div>
+      </motion.div>
     </div>
   );
 };

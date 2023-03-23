@@ -1,9 +1,15 @@
 import styles from "../styles/Price.module.css";
+import { motion } from "framer-motion";
+
 
 const price = () => {
   return (
     <div className={styles.price_one}>
       <div className={styles.price_hero}>
+        <motion.div   initial={{ x: 50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{  duration: 0.4 }} className={styles.price_hero_wrap}>
         <div className={styles.price_hero_text}>
           <h2>Pricing estimates</h2>
           <p style={{ paddingTop: "12px" }}>
@@ -19,9 +25,13 @@ const price = () => {
           src="pricing_hero.png"
           alt="price"
         />
+        </motion.div>
       </div>
       <div className={styles.price_overview}>
-        <div className={styles.price_overview_wrap}>
+        <motion.div   initial={{ y: 150, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{ delay: 0.1, duration: 0.4 }} className={styles.price_overview_wrap}>
           <video
             className={styles.price_overview_video}
             source
@@ -32,10 +42,10 @@ const price = () => {
           ></video>
           <div className={styles.price_overview_text}>
             <h2 style={{ paddingBottom: "20px" }}>
-              Starting at{" "}
+              Starting at
               <span style={{ color: "#31B237", fontWeight: "600" }}>$0 </span>
-              down,{" "}
-              <span style={{ color: "#31B237", fontWeight: "600" }}>$249</span>{" "}
+              down,
+              <span style={{ color: "#31B237", fontWeight: "600" }}>$249</span>
               per month.
             </h2>
             <p style={{ paddingBottom: "20px" }}>
@@ -49,9 +59,12 @@ const price = () => {
               involved.
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
-      <div className={styles.price_est}>
+      <motion.div   initial={{ y: 150, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{ delay: 0.1, duration: 0.4 }} className={styles.price_est}>
         <div className={styles.price_est_text}>
           <h2 style={{ paddingBottom: "20px" }}>Our pricing estimates</h2>
           <p>
@@ -148,7 +161,7 @@ const price = () => {
           * pricing estimates can change depending on add ons and additional
           services needed
         </p>
-      </div>
+      </motion.div>
       <div className={styles.techstack_redirect}>
         <div className={styles.techstack_redirect_wrap}>
           <div className={styles.techstack_redirect_text}>

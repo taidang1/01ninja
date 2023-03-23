@@ -2,13 +2,17 @@ import styles from "../../styles/custom.module.css";
 import StoreMallDirectoryIcon from "@mui/icons-material/StoreMallDirectory";
 import DatasetLinkedIcon from "@mui/icons-material/DatasetLinked";
 import RotateRightIcon from "@mui/icons-material/RotateRight";
+import {motion} from "framer-motion";
 
 const custom = () => {
   return (
     <div className={styles.custom_section}>
       <div className={styles.custom_hero}>
         <div className={styles.custom_hero_wrap}>
-          <div className={styles.custom_hero_text}>
+          <motion.div   initial={{ x: -50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{  duration: 0.4 }} className={styles.custom_hero_text}>
             <h2 style={{ paddingBottom: "12px" }}>
               Best practice custom functionality and integrations
             </h2>
@@ -21,8 +25,11 @@ const custom = () => {
                 Get started now
               </button>
             </div>
-          </div>
-          <video
+          </motion.div>
+          <motion.video   initial={{ y: 150, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{ delay: 0.3, duration: 0.4 }}
             className={styles.custom_hero_video}
             style={{ width: "auto", height: "400px" }}
             source
@@ -30,10 +37,13 @@ const custom = () => {
             autoPlay
             loop
             muted
-          ></video>
+          ></motion.video>
         </div>
       </div>
-      <div className={styles.custom_two}>
+      <motion.div   initial={{ y: 150, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{ delay: 0.1, duration: 0.4 }} className={styles.custom_two}>
         <div className={styles.custom_two_title}>
           <h2 style={{ paddingBottom: "12px" }}>
             Custom software for your business success
@@ -60,7 +70,7 @@ const custom = () => {
               Custom ecommerce integration
             </p>
             <p>
-              {" "}
+             
               providing features and functionalities that are not available in
               off-the-shelf software
             </p>
@@ -101,9 +111,12 @@ const custom = () => {
             </p>
           </div>
         </div>
-      </div>
+      </motion.div>
       <div className={styles.custom_three}>
-        <div className={styles.custom_three_wrap}>
+        <motion.div   initial={{ y: 150, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{ delay: 0.1, duration: 0.4 }} className={styles.custom_three_wrap}>
           <img
             src="/custom_three.png"
             alt="custom_three"
@@ -115,10 +128,13 @@ const custom = () => {
           <p style={{paddingTop:'10px', paddingBottom:'10px'}}>We have partnered with global leading cloud providers such as Amazon Web Services and Google Cloud Platform to ensure the implementation of best practices, as well as to ensure high levels of security and reliability for our clients.</p>
           <p>Our cloud engineers have years of experience across various industries, providing them with an innovative and state-of-the-art skillset that allows us to cater to our clients' needs effectively.</p>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className={styles.custom_four}>
-        <div className={styles.custom_four_wrap}>
+        <motion.div   initial={{ y: 150, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{ delay: 0.1, duration: 0.4 }} className={styles.custom_four_wrap}>
             <div className={styles.custom_four_text}>
                 <h2 style={{paddingBottom:'12px'}}>Our dedicated software team at your disposal</h2>
                 
@@ -127,7 +143,7 @@ const custom = () => {
                 <p >No need to spend millions on a development team, use our and bring your imagination to life.</p>
                 </div>
                 <img src="/custom_four_img.png" alt="custom_four" className={styles.custom_four_img}/>
-                </div>
+                </motion.div>
                 </div>
     </div>
   );

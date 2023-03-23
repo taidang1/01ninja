@@ -2,12 +2,16 @@ import styles from "../../styles/brand.module.css";
 import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
 import QueryStatsIcon from "@mui/icons-material/QueryStats";
 import LanguageIcon from "@mui/icons-material/Language";
+import { motion } from "framer-motion";
 
 const brand = () => {
   return (
     <div className={styles.brand_section}>
       <div className={styles.brand_hero}>
-        <div className={styles.brand_hero_wrap}>
+        <motion.div initial={{ y: 200, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.4 }} className={styles.brand_hero_wrap}>
           <video
           className={styles.brand_hero_video}
             style={{ width: "auto", height: "400px" }}
@@ -34,9 +38,12 @@ const brand = () => {
               </button>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
-      <div className={styles.brand_two}>
+      <motion.div initial={{ y: 200, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.4, delay:.2 }} className={styles.brand_two}>
         <h2 className={styles.brand_two_title} style={{ textAlign: "center", padding: "60px 0" }}>
           Dont use third party iframes
         </h2>
@@ -92,9 +99,12 @@ const brand = () => {
             <p style={{ paddingBottom: "12px", fontWeight: "500" }}>SEO</p>
           </div>
         </div>
-      </div>
+      </motion.div>
       <div className={styles.brand_three}>
-        <div className={styles.brand_three_wrap}>
+        <motion.div initial={{ y: 200, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.4, delay:.2 }} className={styles.brand_three_wrap}>
           <div className={styles.brand_three_text}>
             <h2 style={{ paddingBottom: "20px" }}>
               Bringing your digital brand to life
@@ -113,7 +123,7 @@ const brand = () => {
             src="/brand_custom.png"
             alt="brand"
           />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

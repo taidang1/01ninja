@@ -48,7 +48,10 @@ const ecommerce = () => {
           />
         </div>
       </div>
-      <div className={styles.ecommerce_two}>
+      <motion.div   initial={{ y: 150, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{ delay: 0.1, duration: 0.4 }} className={styles.ecommerce_two}>
         <h2 style={{ textAlign: "center", paddingBottom: "20px" }}>
           Growing popularity of ecommerce
         </h2>
@@ -93,9 +96,12 @@ const ecommerce = () => {
             <p style={{ fontWeight: "500" }}>Better start</p>
           </div>
         </div>
-      </div>
+      </motion.div>
       <div className={styles.ecommerce_three}>
-        <div className={styles.ecommerce_three_wrap}>
+        <motion.div   initial={{ y: 150, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{ delay: 0.1, duration: 0.4 }} className={styles.ecommerce_three_wrap}>
           <img
             className={styles.ecommerce_three_img}
             src="/your_domain.png"
@@ -118,14 +124,17 @@ const ecommerce = () => {
               experience
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className={styles.ecommerce_four}>
         <div className={styles.ecommerce_four_text}>
           <h2>Our ecommerce features</h2>
           <p>Preview our ecommerce features</p>
         </div>
-<div className={styles.ecommerce_four_swiper_wrap}>
+<motion.div   initial={{ x: 150, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{ delay: 0.3, duration: 0.4 }} className={styles.ecommerce_four_swiper_wrap}>
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
@@ -297,7 +306,7 @@ const ecommerce = () => {
             </p>
           </SwiperSlide>
         </Swiper>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

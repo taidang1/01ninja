@@ -4,6 +4,7 @@ import { useFirestore } from '../hooks/useFirestore'
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import Link from 'next/link';
 
 const Footer = () => {
     const [email, setEmail] = useState('')
@@ -36,19 +37,37 @@ const Footer = () => {
                 <div className={styles.footer_links_wrap}>
             <div className={styles.footer_sections}>
                 <p style={{color:'#D3CEC4', paddingBottom:'10px', fontSize:'14px'}}>sections</p>
+                <Link href="/about">
                 <p className={styles.footer_p}>About</p>
+                </Link>
+                <Link href="/services">
                 <p className={styles.footer_p}>Services</p>
+                </Link>
+                <Link href="/price">
                 <p className={styles.footer_p}>Pricing</p>
+                </Link>
                 <button className={styles.footer_demo}>Demo <PlayArrowIcon/></button>
             </div>
             <div className={styles.footer_resources}>
                 <p style={{color:'#D3CEC4', paddingBottom:'10px', fontSize:'14px'}}>resources</p>
+                <Link href="/services/brand">
                 <p className={styles.footer_p}>Branding</p>
+                </Link>
+                <Link href="/services/ecommerce">
                 <p className={styles.footer_p}>Ecommerce</p>
+                </Link>
+                <Link href="/services/custom">
                 <p className={styles.footer_p}>Custom</p>
+                </Link>
+                <Link href="/services/cms">
                 <p className={styles.footer_p}>CMS</p>
+                </Link>
+                <Link href="/services/support">
                 <p className={styles.footer_p}>Support</p>
+                </Link>
+                <Link href="/services/support">
                 <p className={styles.footer_p}>Analytics</p>
+                </Link>
 
 
             </div>
@@ -58,7 +77,9 @@ const Footer = () => {
                 <p style={{color:'#fff'}} className={styles.footer_p}>+1(201) 328-7539</p>
                 <p className={styles.footer_p}>shanonmcdonald@01ninjas.com</p>
                 <div>
+                    <Link href="/becomeapartner">
                 <button className={styles.footer_demo}>Join us <FavoriteIcon style={{paddingLeft:'6px', color:'#27241D'}}/></button>
+                </Link>
                 </div>
             </div>
             </div>

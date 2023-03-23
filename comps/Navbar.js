@@ -141,7 +141,7 @@ const Navbar = (props) => {
                       <Link href="/about">Demo</Link>
                     </div>
                     <div>
-                      <button className={styles.btn_mobile}>
+                      <button onClick={handleShow} className={styles.btn_mobile}>
                         <Link
                           style={{
                             fontWeight: "550",
@@ -158,9 +158,9 @@ const Navbar = (props) => {
                 </motion.div>
               )}
             </AnimatePresence>
-            <button className={styles.btn}  onClick={handleShow}>
+            <button className={styles.btn}  >
               <Link
-              onClick={handleShow}
+              
                 style={{
                   fontWeight: "550",
                   display: "flex",

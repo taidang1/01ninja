@@ -3,6 +3,10 @@
     padding-top: 120px;
 }
 .service_hero{
+   height: auto;
+   width: 100%;
+}
+.service_hero_wrap{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -194,7 +198,7 @@ width: auto;
 }
 
 @media screen and (max-device-width: 640px) {
-    .service_hero{
+    .service_hero_wrap{
         flex-direction: column;
         margin: 12px;
     }

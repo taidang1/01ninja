@@ -61,6 +61,7 @@ export default function Home(props) {
             you build your next project.
           </p>
           <div className={styles.home_btn_group}>
+            <Link href="/becomeapartner">
             <button
               style={{ display: "flex", alignItems: "center", color:'#1D1A13' }}
               className={styles.home_btn}
@@ -68,7 +69,10 @@ export default function Home(props) {
               Contact us
               <PhoneCallbackIcon style={{ marginLeft: "4px", color:'#1D1A13' }} />
             </button>
+            </Link>
+            <Link href="/about">
             <button className={styles.home_btn2}>learn more</button>
+            </Link>
           </div>
         </div>
       </div>
@@ -89,7 +93,7 @@ export default function Home(props) {
               sales.
             </p>
             <div style={{ display: "flex", alignItems: "center" }}>
-              <a
+              <a href="/services"
                 style={{
                   textDecoration: "underline",
                   textDecorationColor: "#51CA58",
@@ -117,7 +121,10 @@ export default function Home(props) {
         </motion.div>
       </div>
       <div className={styles.home3}>
-        <div className={styles.home3_wrap}>
+        <motion.div   initial={{ y: 200, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.4 }} className={styles.home3_wrap}>
           <div
             style={{
               display: "flex",
@@ -141,7 +148,7 @@ export default function Home(props) {
               reducing the manual workload.
             </p>
           </div>
-        </div>
+        
         <div className={styles.swiper_wrap}>
           <Swiper
           
@@ -225,7 +232,9 @@ export default function Home(props) {
                     As a cannabis business grows, a software can easily scale
                     with the business.{" "}
                   </p>
+                  <Link href="/services#service_ecommerce" scroll={true}>
                   <button className={styles.learn_more_btn}>learn more</button>
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>
@@ -255,7 +264,9 @@ export default function Home(props) {
                     As a cannabis business grows, a software can easily scale
                     with the business.{" "}
                   </p>
+                  <Link href="/services#service_custom" scroll={true}>
                   <button className={styles.learn_more_btn}>learn more</button>
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>
@@ -285,7 +296,9 @@ export default function Home(props) {
                     As a cannabis business grows, a software can easily scale
                     with the business.{" "}
                   </p>
+                  <Link href="/services#service_custom" scroll={true}>
                   <button className={styles.learn_more_btn}>learn more</button>
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>
@@ -314,7 +327,9 @@ export default function Home(props) {
                     As a cannabis business grows, a software can easily scale
                     with the business.{" "}
                   </p>
+                  <Link href="/services#service_cms" scroll={true}>
                   <button className={styles.learn_more_btn}>learn more</button>
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>
@@ -343,7 +358,9 @@ export default function Home(props) {
                     As a cannabis business grows, a software can easily scale
                     with the business.{" "}
                   </p>
+                  <Link href="/services#service_anal" scroll={true}>
                   <button className={styles.learn_more_btn}>learn more</button>
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>
@@ -372,7 +389,9 @@ export default function Home(props) {
                     As a cannabis business grows, a software can easily scale
                     with the business.{" "}
                   </p>
+                  <Link href="/services#service_ecommerce" scroll={true}>
                   <button className={styles.learn_more_btn}>learn more</button>
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>
@@ -400,7 +419,9 @@ export default function Home(props) {
                     As a cannabis business grows, a software can easily scale
                     with the business.{" "}
                   </p>
+                  <Link href="/services#service_support" scroll={true}>
                   <button className={styles.learn_more_btn}>learn more</button>
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>
@@ -428,15 +449,21 @@ export default function Home(props) {
                     As a cannabis business grows, a software can easily scale
                     with the business.{" "}
                   </p>
+                  <Link href="/services#service_support" scroll={true}>
                   <button className={styles.learn_more_btn}>learn more</button>
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>
           </Swiper>
         </div>
+        </motion.div>
       </div>
       <div className={styles.home4}>
-        <div className={styles.home4_wrap}>
+        <motion.div   initial={{ y: 200, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.4 }} className={styles.home4_wrap}>
         <div className={styles.home4_swiper_wrap} style={{ borderRadius: "25px", width: "500px", margin: "20px" }}>
           <Swiper
             spaceBetween={0}
@@ -547,6 +574,7 @@ export default function Home(props) {
           </p>
           <div style={{ display: "flex", alignItems: "center" }}>
             <a
+            href="/services"
               style={{
                 textDecoration: "underline",
                 textDecorationColor: "#51CA58",
@@ -562,9 +590,13 @@ export default function Home(props) {
             />
           </div>
         </div>
-        </div>
+        </motion.div>
       </div>
       <div className={styles.home_tech}>
+        <motion.div initial={{ x: 200, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.4, delay:.4 }} className={styles.home_tech_wrap}>
         <h2 style={{paddingBottom:'20px'}}>tech leveraged</h2>
         <Swiper
           slidesPerView={'auto'}
@@ -687,8 +719,13 @@ export default function Home(props) {
             style={{ fontSize: "16px", marginLeft: "12px" }}
           />
         </div>
+        </motion.div>
       </div>
       <div className={styles.home5}>
+        <motion.div className={styles.home5_wrap} initial={{ y: 200, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.4, delay:.2 }} >
         <div className={styles.home5_text}>
           <h2 style={{ textAlign: "left" }}>What customers say about us!</h2>
         </div>
@@ -901,6 +938,7 @@ export default function Home(props) {
             </div>
           </SwiperSlide>
         </Swiper>
+      </motion.div>
       </div>
       <div className={styles.home6}>
         <h2>View our live demo! </h2>

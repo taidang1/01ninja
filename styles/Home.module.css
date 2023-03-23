@@ -102,6 +102,9 @@ background-color: #1D1A13;
 .home3_swiper{
 
 }
+.home3_wrap{
+
+}
 
 .hero_backdrop{
   background:#27241D;
@@ -182,18 +185,21 @@ display: flex;
   background-color: #E8E6E1;
   z-index: 99;
   position: relative;
-padding-top: 90px;
-padding-bottom: 60px;
-display: flex;
-background-image: url('/review_confetti.png');
-background-size: 300px;
-background-repeat: no-repeat;
-background-position: 90px 250px;
 
 
 
 
 
+
+}
+.home5_wrap{
+  padding-top: 90px;
+  padding-bottom: 60px;
+  display: flex;
+  background-image: url('/review_confetti.png');
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: 90px 250px;
 }
 
 .swiper_five {
@@ -209,7 +215,7 @@ background-position: 90px 250px;
   border-radius: 25px;
 min-height:300px;
 max-height: 300px;
-width:200px;
+width:300px;
   /* Center slide text vertically */
   display: flex;
   justify-content: center;
@@ -438,6 +444,13 @@ width:200px;
   padding-left: 20px;
 }
 .home5{
+ 
+
+
+
+
+}
+.home5_wrap{
   height:auto;
   background-color: #E8E6E1;
   z-index: 99;
@@ -450,10 +463,6 @@ background-size: 300px;
 background-repeat: no-repeat;
 background-position: 90px 250px;
 flex-direction: column;
-
-
-
-
 }
 .home5_text{
   width: 100%;
@@ -468,7 +477,7 @@ flex-direction: column;
   border-radius: 25px;
 min-height:300px;
 max-height: 300px;
-
+min-width: 200px;
   /* Center slide text vertically */
   display: flex;
   justify-content: center;

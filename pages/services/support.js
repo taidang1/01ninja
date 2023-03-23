@@ -2,12 +2,17 @@ import styles from "../../styles/support.module.css";
 import HouseSidingIcon from "@mui/icons-material/HouseSiding";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 import LocalConvenienceStoreIcon from "@mui/icons-material/LocalConvenienceStore";
+import { motion } from "framer-motion";
+
 
 const support = () => {
   return (
     <div className={styles.support_section}>
       <div className={styles.support_hero}>
-        <div className={styles.support_hero_wrap}>
+        <motion.div   initial={{ x: 50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{  duration: 0.4 }} className={styles.support_hero_wrap}>
           <div className={styles.support_hero_text}>
             <h2 style={{ paddingBottom: "12px" }}>
               Ensuring our customers are taken care of, in person or remotely
@@ -33,9 +38,12 @@ const support = () => {
             loop
             muted
           ></video>
-        </div>
+        </motion.div>
       </div>
-      <div className={styles.support_two}>
+      <motion.div   initial={{ y: 150, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{ delay: 0.1, duration: 0.4 }} className={styles.support_two}>
         <div className={styles.support_two_title}>
           <h2 style={{paddingBottom:'12px'}}>
             Being there for our clients is the key to sustainable business
@@ -87,9 +95,12 @@ const support = () => {
             <p>Available 7 days a week</p>
           </div>
         </div>
-      </div>
+      </motion.div>
       <div className={styles.support_three}>
-        <div className={styles.support_three_wrap}>
+        <motion.div   initial={{ y: 150, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{ delay: 0.3, duration: 0.4 }} className={styles.support_three_wrap}>
           <img
             className={styles.support_three_img}
             src="/support_three_img.png"
@@ -98,7 +109,7 @@ const support = () => {
           <div className={styles.support_three_text}>
             <h2>Training your team our software, regardless of location</h2>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

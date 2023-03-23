@@ -1,7 +1,7 @@
 import styles from "../../styles/Services.module.css";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { motion } from "framer-motion";
-import BalanceIcon from "@mui/icons-material/Balance";
+
 import Link from "next/link";
 import HandshakeIcon from "@mui/icons-material/Handshake";
 import GppGoodIcon from "@mui/icons-material/GppGood";
@@ -12,6 +12,9 @@ const services = () => {
   return (
     <div className={styles.service_one}>
       <div className={styles.service_hero}>
+        <motion.div    initial={{ opacity: 0, scale: 0 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.1, duration: 0.6, type: "spring" }} className={styles.service_hero_wrap}>
         <img
           className={styles.service_hero_img}
           src="service_hero_canna.png"
@@ -29,9 +32,13 @@ const services = () => {
             <button className={styles.service_btn}> Get started now</button>
           </div>
         </div>
+        </motion.div>
       </div>
       <div className={styles.service_overview}>
-        <div className={styles.service_overview_wrap}>
+        <motion.div initial={{ x: 200, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.4, delay:.2 }}  className={styles.service_overview_wrap}>
           <p style={{ fontWeight: "450", paddingBottom: "12px" }}>
             Our competitive software services
           </p>
@@ -146,7 +153,7 @@ const services = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className={styles.service_brand} id="service_brand">
         <motion.div
@@ -200,7 +207,7 @@ const services = () => {
           ></video>
         </motion.div>
       </div>
-      <div className={styles.service_ecommerce}>
+      <div id="service_ecommerce" className={styles.service_ecommerce}>
         <motion.div
           initial={{ y: 150, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
@@ -247,7 +254,7 @@ const services = () => {
           </div>
         </motion.div>
       </div>
-      <div className={styles.service_custom}>
+      <div id="service_custom"  className={styles.service_custom}>
         <motion.div
           initial={{ y: 150, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
@@ -298,7 +305,7 @@ const services = () => {
           ></video>
         </motion.div>
       </div>
-      <div className={styles.service_cms}>
+      <div id="service_cms"  className={styles.service_cms}>
         <motion.div
           initial={{ y: 150, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
@@ -348,7 +355,7 @@ const services = () => {
           />
         </motion.div>
       </div>
-      <div className={styles.service_support}>
+      <div id="service_support"  className={styles.service_support}>
         <motion.div
           initial={{ y: 150, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
@@ -400,7 +407,7 @@ const services = () => {
           ></video>
         </motion.div>
       </div>
-      <div className={styles.service_analytics}>
+      <div id="service_anal" className={styles.service_analytics}>
         <motion.div
           initial={{ y: 150, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}

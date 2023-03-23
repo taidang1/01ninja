@@ -8,12 +8,16 @@ import AddModeratorIcon from "@mui/icons-material/AddModerator";
 import PermMediaIcon from "@mui/icons-material/PermMedia";
 import GTranslateIcon from '@mui/icons-material/GTranslate';
 import CloudSyncIcon from '@mui/icons-material/CloudSync';
+import { motion } from "framer-motion";
 
 const cms = () => {
   return (
     <div className={styles.cms_section}>
       <div className={styles.cms_hero}>
-        <div className={styles.cms_hero_wrap}>
+        <motion.div   initial={{ x: 50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{  duration: 0.4 }} className={styles.cms_hero_wrap}>
           <img className={styles.cms_hero_img} src="/cms_hero.png" />
           <div className={styles.cms_hero_text}>
             <h2 style={{ paddingBottom: "12px" }}>
@@ -28,9 +32,12 @@ const cms = () => {
               <button className={styles.cms_hero_btn}>Get started now</button>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
-      <div className={styles.cms_two}>
+      <motion.div   initial={{ y: 150, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{ delay: 0.1, duration: 0.4 }} className={styles.cms_two}>
         <div className={styles.cms_two_title}>
           <h2>How our CMS works...</h2>
           <p>
@@ -96,9 +103,12 @@ const cms = () => {
             </p>
           </div>
         </div>
-      </div>
+      </motion.div>
       <div className={styles.cms_three}>
-        <div className={styles.cms_three_wrap}>
+        <motion.div   initial={{ x: 50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{ delay: 0.3, duration: 0.4 }} className={styles.cms_three_wrap}>
           <div className={styles.cms_three_text}>
             <h2>Admin & inventory digital store CMS</h2>
             <p>
@@ -110,10 +120,13 @@ const cms = () => {
             </p>
           </div>
           <img className={styles.cms_three_img} src="/service_cms.png" />
-        </div>
+        </motion.div>
       </div>
       <div className={styles.cms_four}>
-        <div className={styles.cms_four_wrap}>
+        <motion.div   initial={{ y: 150, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{ delay: 0.1, duration: 0.4 }} className={styles.cms_four_wrap}>
           <div className={styles.cms_four_title}>
             <h2>What features does our CMS have?</h2>
             <p className={styles.cms_four_text}>
@@ -249,7 +262,7 @@ const cms = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
 
