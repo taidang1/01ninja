@@ -141,3 +141,91 @@ padding-bottom: 60px;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 
 }
+
+
+
+@media screen and (max-device-width: 640px) {
+
+    .about_header_title{
+        width:85% !important;
+        text-align: left;
+    }
+    .about_header_p{
+        width:85% !important;
+        text-align: left;
+    }
+    .about_two_wrap{
+        padding:30px 15px;
+        display: flex;
+        flex-direction: column;
+
+     
+        border-bottom: solid 1px #857F72;
+    height:auto;
+
+    }
+    .about_two_one{
+        margin-bottom: 12px;
+    }
+    .about_two_two{
+        margin-bottom: 12px;
+    }
+    .about_two_three{
+        
+    }
+    .about_header{
+        height: auto;
+        padding-top: 90px;
+ 
+       
+    }
+    .about_us{
+        padding: 30px 20px;
+    }
+    .about_us_wrap{
+        display: flex;
+        flex-direction: column;
+      
+        align-items: center;
+        padding-bottom: 20px;
+      
+       
+    }
+
+    .about_us_text{
+        width:95%;
+    }
+    .about_us_img{
+        height: 360px;
+        width:auto;
+        padding-top: 20px;
+    }
+
+    .about_banner{
+        height: 30vh;
+        width: 100%;
+        background-color: #EF4E4E;
+    
+    }
+    .about_banner_wrap{
+        display: flex;
+        flex-direction:column;
+        
+        align-items: center;
+        height: 80%;
+    }
+    .about_banner_button{
+        padding: 16px 20px;
+        border-radius: 25px;
+        border: none;
+        background-color: #51CA58;
+        font-size: 18px;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    
+    }
+    .banner_text{
+        width:85% !important;
+    }
+
+
+}

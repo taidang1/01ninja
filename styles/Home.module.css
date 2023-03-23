@@ -46,7 +46,7 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3)
   font-weight: 500;
   background-color: #51CA58;
   margin-right:20px;
-
+  white-space: nowrap;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .home_btn:active{
@@ -59,6 +59,7 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3)
   font-size: 1.2em;
   font-weight: 500;
   color: #1D1A13;
+  white-space: nowrap;
   background-color: #C1EAC5;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
@@ -82,6 +83,10 @@ background-color: #E8E6E1;
   justify-content: space-around;
   align-items: center;
 }
+.home2_video{
+  height:450px;
+  width:auto;
+}
 .home3{
   height:auto;
 z-index: 99;
@@ -89,6 +94,12 @@ position: relative;
 background-color: #1D1A13;
 
 
+
+}
+.home3_slider{
+  min-width: 300px;
+}
+.home3_swiper{
 
 }
 
@@ -105,8 +116,8 @@ background-color: #1D1A13;
   width: 40%;
 }
 .swiper_wrap{
-  display: flex;
-  align-items: center;
+padding:12px;
+
 }
 
 .swiper_slide_title{
@@ -127,17 +138,20 @@ background-color: #1D1A13;
   height: auto;
   width: 100%;
   position: relative;
+
+  background-color: #E8E6E1;
+  padding: 90px 0;
+  z-index: 99;
+}
+.home4_wrap{
   display: flex;
   flex-direction:row;
 
   justify-content: center;
   align-items: center;
-  background-color: #E8E6E1;
-  padding: 90px 0;
-  z-index: 99;
 }
 .swiper_slide_image{
-  height:450px;
+  height:420px;
   width:100%;
 display: flex;
  
@@ -171,6 +185,10 @@ display: flex;
 padding-top: 90px;
 padding-bottom: 60px;
 display: flex;
+background-image: url('/review_confetti.png');
+background-size: 300px;
+background-repeat: no-repeat;
+background-position: 90px 250px;
 
 
 
@@ -211,7 +229,7 @@ width:200px;
   margin-left: 90px;
 }
 .home6{
-  height: 70vh;
+  height: 50vh;
   background-color: #C1EAC5;
   z-index: 111;
   position: relative;
@@ -292,4 +310,173 @@ width:200px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+
+@media screen and (max-device-width: 640px) {
+  .homepage {
+    height: 45vh;
+  }
+
+  .home_slogan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    margin-top:30px;
+    text-align: center;
+    position: fixed;
+    z-index: 10;
+  
+  }
+  .home_slogan h1{
+    font-size: 3em;
+  }
+  .home2_wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+  }
+  .home2{
+    height:auto;
+    padding: 30px 0px;
+  z-index: 99;
+  position: relative;
+  background-color: #E8E6E1;
+  
+  }
+  .home2_text{
+    width: 85%;
+  }
+  .home2_video{
+    height: 350px;
+    width:auto;
+    margin-top: 20px;
+  }
+  .home3_text{
+    width:85% !important;
+  }
+.home3_swiper{
+  padding:0px !important;
+  
+  width: 100% !important;
+}
+.home4_swiper_wrap{
+  
+}
+
+.home4_wrap{
+  display: flex;
+  flex-direction:column;
+
+  justify-content: center;
+  align-items: center;
+
+}
+.home4_slider{
+ 
+}
+.home4_swiper{
+  width:75% !important;
+  height: 350px !important;
+}
+.swiper_slide_image{
+  height: 350px !important;
+  width: 100% !important;
+}
+.home4{
+  padding: 30px 0px;
+}
+.home4_text{
+  width: 85%;
+  padding-left: 0px;
+  
+
+}
+.home_top{
+  height:10vh;
+}
+.swiper_wrap{
+  margin-top: 30px;
+  
+}
+.home3_slider{
+  margin-bottom: 30px;
+}
+
+.swiper_slider_tech{
+  min-width: 200px;
+}
+
+.swiper_slider_tech{
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  max-width:200px;
+  max-height: 200px!important;
+
+  /* Center slide text vertically */
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+ 
+}
+
+.home_tech{
+  height: auto;
+  background-color: #E8E6E1;
+  width:100%;
+  z-index: 99;
+
+  position: relative;
+
+  padding: 30px 0px;
+  padding-left: 20px;
+}
+.home5{
+  height:auto;
+  background-color: #E8E6E1;
+  z-index: 99;
+  position: relative;
+padding-top: 30px;
+padding-bottom: 30px;
+display: flex;
+background-image: url('/review_confetti.png');
+background-size: 300px;
+background-repeat: no-repeat;
+background-position: 90px 250px;
+flex-direction: column;
+
+
+
+
+}
+.home5_text{
+  width: 100%;
+  margin-bottom: 20px;
+  margin-left: 30px;
+
+}
+.swiper_slider_five {
+  text-align: center;
+  font-size: 18px;
+  background: #FAF9F7;
+  border-radius: 25px;
+min-height:300px;
+max-height: 300px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:20px;
+}
+.swiper_five{
+  margin:0px 20px !important;
+}
+
 }

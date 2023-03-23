@@ -33,6 +33,7 @@ const Footer = () => {
            {/* <p style={{color:'#E8E6E1', paddingTop:'9px', paddingLeft:'6px'}}>01ninjas.com</p>*/}
             </div>
             <div className={styles.footer_links}>
+                <div className={styles.footer_links_wrap}>
             <div className={styles.footer_sections}>
                 <p style={{color:'#D3CEC4', paddingBottom:'10px', fontSize:'14px'}}>sections</p>
                 <p className={styles.footer_p}>About</p>
@@ -51,12 +52,13 @@ const Footer = () => {
 
 
             </div>
+            </div>
             <div className={styles.footer_contact}>
                 <p style={{color:'#D3CEC4', paddingBottom:'10px', fontSize:'14px'}}>contact</p>
-                <p className={styles.footer_p}>(201) 328-7539</p>
+                <p style={{color:'#fff'}} className={styles.footer_p}>+1(201) 328-7539</p>
                 <p className={styles.footer_p}>shanonmcdonald@01ninjas.com</p>
                 <div>
-                <button className={styles.footer_demo}>Join us <FavoriteIcon style={{paddingLeft:'6px'}}/></button>
+                <button className={styles.footer_demo}>Join us <FavoriteIcon style={{paddingLeft:'6px', color:'#27241D'}}/></button>
                 </div>
             </div>
             </div>
