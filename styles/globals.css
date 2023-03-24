@@ -65,6 +65,9 @@ h3{
   letter-spacing: -0.01em;
   padding-bottom: 12px;
 }
+.button{
+   color:#1D1A13;
+}
 @media screen and (max-device-width: 640px) {
    h2{
       font-size: 1.618em;

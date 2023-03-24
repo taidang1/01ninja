@@ -23,6 +23,7 @@
     border-radius: 25px;
     border: none;
     margin-top: 30px;
+    color:#1D1A13;
     font-size: 1.1em;
     font-weight: 500;
     background-color: #51CA58;
@@ -137,6 +138,7 @@ padding-bottom: 60px;
     border-radius: 25px;
     border: none;
     background-color: #51CA58;
+    color:#1D1A13;
     font-size: 18px;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 
