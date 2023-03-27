@@ -3,6 +3,7 @@ import HouseSidingIcon from "@mui/icons-material/HouseSiding";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 import LocalConvenienceStoreIcon from "@mui/icons-material/LocalConvenienceStore";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 
 const support = () => {
@@ -103,7 +104,7 @@ const support = () => {
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: false }}
           transition={{ delay: 0.3, duration: 0.4 }} className={styles.support_three_wrap}>
-          <img
+          <Image width={300} height={300}
             className={styles.support_three_img}
             src="/support_three_img.png"
             alt="support_three"

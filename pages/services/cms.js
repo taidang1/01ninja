@@ -9,6 +9,7 @@ import PermMediaIcon from "@mui/icons-material/PermMedia";
 import GTranslateIcon from '@mui/icons-material/GTranslate';
 import CloudSyncIcon from '@mui/icons-material/CloudSync';
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const cms = () => {
   return (
@@ -18,7 +19,7 @@ const cms = () => {
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: false }}
           transition={{  duration: 0.4 }} className={styles.cms_hero_wrap}>
-          <img className={styles.cms_hero_img} src="/cms_hero.png" />
+          <Image width={300} height={300} className={styles.cms_hero_img} src="/cms_hero.png" />
           <div className={styles.cms_hero_text}>
             <h2 style={{ paddingBottom: "12px" }}>
               Our next generation content management system
@@ -119,7 +120,7 @@ const cms = () => {
               Customize your databases, subscriptions and business automations
             </p>
           </div>
-          <img className={styles.cms_three_img} src="/service_cms.png" />
+          <Image width={300} height={300} className={styles.cms_three_img} src="/service_cms.png" />
         </motion.div>
       </div>
       <div className={styles.cms_four}>

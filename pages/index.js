@@ -140,7 +140,7 @@ export default function Home(props) {
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: false }}
           transition={{ duration: 0.3, delay:.1 }}  className={styles.banner_box_one}>
-              <Image  className={styles.banner_one} src="/banner_one.png" alt="" width={100} height={100} />
+              <Image  className={styles.banner_one} src="/banner_one.png" alt="" width={200} height={200} />
               <div className={styles.banner_text_wrapper2}>
                 <Link href="/services">
               <p className={styles.banner_text}>Cannabis shops<ArrowForwardIosIcon
@@ -154,7 +154,7 @@ export default function Home(props) {
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: false }}
           transition={{ duration: 0.3, delay: .3 }} className={styles.banner_box_two}>
-            <img className={styles.banner_one} src="banner_two.png" alt="" />
+            <Image width={200} height={200} className={styles.banner_one} src="/banner_two.png" alt="" />
             <div className={styles.banner_text_wrapper}>
               <Link href="/services/ecommerce">
             <p className={styles.banner_text}>Ecommerce<ArrowForwardIosIcon
@@ -168,7 +168,7 @@ export default function Home(props) {
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: false }}
           transition={{ duration: 0.3, delay:.6}} className={styles.banner_box_three}>
-<img className={styles.banner_one} src="banner_three.png" alt="" />
+<Image width={200} height={200} className={styles.banner_one} src="/banner_three.png" alt="" />
 <div className={styles.banner_text_wrapper2}>
             <Link href="/services/custom">
             <p className={styles.banner_text}>Custom software<ArrowForwardIosIcon
@@ -182,7 +182,7 @@ export default function Home(props) {
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: false }}
           transition={{ duration: 0.4, delay:.9 }} className={styles.banner_box_four}>
-            <img className={styles.banner_one} src="banner_four.png" alt="" />
+            <Image width={200} height={200} className={styles.banner_one} src="/banner_four.png" alt="" />
             <div className={styles.banner_text_wrapper}>
               <Link href="/services">
             <p className={styles.banner_text}>Delivery logistics<ArrowForwardIosIcon
@@ -605,9 +605,9 @@ export default function Home(props) {
             <SwiperSlide className={styles.home4_slider} style={{ borderRadius: "25px" }}>
               <div className={styles.swiper_backdrop}></div>
 
-              <img
+              <Image width={300} height={300}
                 className={styles.swiper_slide_image}
-                src="software_one.png"
+                src="/software_one.png"
               />
               <div className={styles.software_img_text}>
                 <p
@@ -625,9 +625,9 @@ export default function Home(props) {
             </SwiperSlide>
             <SwiperSlide className={styles.home4_slider} style={{ borderRadius: "25px" }}>
               <div className={styles.swiper_backdrop}></div>
-              <img
+              <Image width={300} height={300}
                 className={styles.swiper_slide_image}
-                src="software_two.png"
+                src="/software_two.png"
               />
               <div className={styles.software_img_text}>
                 <p
@@ -646,9 +646,9 @@ export default function Home(props) {
 
             <SwiperSlide className={styles.home4_slider} style={{ borderRadius: "25px" }}>
               <div className={styles.swiper_backdrop}></div>
-              <img
+              <Image width={300} height={300}
                 className={styles.swiper_slide_image}
-                src="software_three.png"
+                src="/software_three.png"
               />
               <div className={styles.software_img_text}>
                 <p
@@ -667,9 +667,9 @@ export default function Home(props) {
 
             <SwiperSlide className={styles.home4_slider} style={{ borderRadius: "25px" }}>
               <div className={styles.swiper_backdrop}></div>
-              <img
+              <Image width={300} height={300}
                 className={styles.swiper_slide_image}
-                src="software_four.png"
+                src="/software_four.png"
               />
               <div className={styles.software_img_text}>
                 <p

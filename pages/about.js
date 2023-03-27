@@ -3,6 +3,7 @@ import BalanceIcon from "@mui/icons-material/Balance";
 import PsychologyIcon from "@mui/icons-material/Psychology";
 import ScienceIcon from "@mui/icons-material/Science";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const about = () => {
   return (
@@ -155,7 +156,7 @@ const about = () => {
               data-driven decisions and stay ahead of the competition.
             </p>
           </div>
-          <img
+          <Image width={300} height={300}
             className={styles.about_us_img}
             src="about_us.png"
             alt="about us"

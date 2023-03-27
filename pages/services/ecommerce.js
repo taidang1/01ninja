@@ -16,6 +16,7 @@ import SouthAmericaIcon from "@mui/icons-material/SouthAmerica";
 import ElectricalServicesIcon from "@mui/icons-material/ElectricalServices";
 import DiscountIcon from "@mui/icons-material/Discount";
 import WifiChannelIcon from "@mui/icons-material/WifiChannel";
+import Image from "next/image";
 
 const ecommerce = () => {
   return (
@@ -38,7 +39,7 @@ const ecommerce = () => {
               </button>
             </div>
           </motion.div>
-          <motion.img
+          <motion.Image width={300} height={300}
             initial={{ x: 120, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.5 }}
@@ -102,7 +103,7 @@ const ecommerce = () => {
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: false }}
           transition={{ delay: 0.1, duration: 0.4 }} className={styles.ecommerce_three_wrap}>
-          <img
+          <Image width={300} height={300}
             className={styles.ecommerce_three_img}
             src="/your_domain.png"
             alt="ecommerce"

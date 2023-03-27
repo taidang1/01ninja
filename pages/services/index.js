@@ -220,9 +220,9 @@ const services = () => {
           transition={{ delay: 0.1, duration: 0.4 }}
           className={styles.service_ecommerce_wrap}
         >
-          <img
+          <Image width={300} height={300}
             className={styles.service_ecommerce_img}
-            src="service_cart.png"
+            src="/service_cart.png"
             alt="ecommerce"
           />
           <div className={styles.service_ecommerce_text}>
@@ -355,9 +355,9 @@ const services = () => {
               </Link>
             </div>
           </div>
-          <img
+          <Image width={300} height={300}
             className={styles.service_cms_img}
-            src="service_cms.png"
+            src="/service_cms.png"
             alt="cms"
           />
         </motion.div>
@@ -424,9 +424,9 @@ const services = () => {
           transition={{ delay: 0.1, duration: 0.4 }}
           className={styles.service_analytics_wrap}
         >
-          <img
+          <Image width={300} height={300}
             className={styles.service_analytics_img}
-            src="service_analytics.png"
+            src="/service_analytics.png"
             alt="analytics"
           />
           <div className={styles.service_analytics_text}>

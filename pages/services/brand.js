@@ -3,6 +3,7 @@ import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
 import QueryStatsIcon from "@mui/icons-material/QueryStats";
 import LanguageIcon from "@mui/icons-material/Language";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const brand = () => {
   return (
@@ -120,7 +121,7 @@ const brand = () => {
               only unique to your brand
             </p>
           </div>
-          <img
+          <Image width={300} height={300}
             className={styles.brand_three_img}
             src="/brand_custom.png"
             alt="brand"

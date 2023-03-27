@@ -3,6 +3,7 @@ import StoreMallDirectoryIcon from "@mui/icons-material/StoreMallDirectory";
 import DatasetLinkedIcon from "@mui/icons-material/DatasetLinked";
 import RotateRightIcon from "@mui/icons-material/RotateRight";
 import {motion} from "framer-motion";
+import Image from "next/image";
 
 const custom = () => {
   return (
@@ -119,7 +120,7 @@ const custom = () => {
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: false }}
           transition={{ delay: 0.1, duration: 0.4 }} className={styles.custom_three_wrap}>
-          <img
+          <Image width={300} height={300}
             src="/custom_three.png"
             alt="custom_three"
             className={styles.custom_three_img}
@@ -144,7 +145,7 @@ const custom = () => {
                 <p style={{paddingBottom:'10px'}}>When it comes to software and the web, the better quality and more organised programs always win.</p>
                 <p >No need to spend millions on a development team, use our and bring your imagination to life.</p>
                 </div>
-                <img src="/custom_four_img.png" alt="custom_four" className={styles.custom_four_img}/>
+                <Image width={300} height={300} src="/custom_four_img.png" alt="custom_four" className={styles.custom_four_img}/>
                 </motion.div>
                 </div>
     </div>
