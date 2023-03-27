@@ -29,6 +29,7 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import { styled } from "@mui/material/styles";
 import MuxVideo from '@mux/mux-video-react';
 import Skeleton from "@mui/material/Skeleton";
+import Image from "next/image";
 
 const StyledRating = styled(Rating)({
   "& .MuiRating-iconFilled": {
@@ -139,7 +140,7 @@ export default function Home(props) {
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: false }}
           transition={{ duration: 0.3, delay:.1 }}  className={styles.banner_box_one}>
-              <img className={styles.banner_one} src="banner_one.png" alt="" />
+              <Image  className={styles.banner_one} src="/banner_one.png" alt="" width={100} height={100} />
               <div className={styles.banner_text_wrapper2}>
                 <Link href="/services">
               <p className={styles.banner_text}>Cannabis shops<ArrowForwardIosIcon

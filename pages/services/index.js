@@ -1,8 +1,7 @@
 import styles from "../../styles/Services.module.css";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { motion } from "framer-motion";
-import Image from 'next/image';
-
+import Image from "next/image";
 import Link from "next/link";
 import HandshakeIcon from "@mui/icons-material/Handshake";
 import GppGoodIcon from "@mui/icons-material/GppGood";
@@ -18,7 +17,10 @@ const services = () => {
           transition={{ delay: 0.1, duration: 0.6, type: "spring" }} className={styles.service_hero_wrap}>
         <Image
           className={styles.service_hero_img}
-          src="service_hero_canna.png"
+          src="/service_hero_canna.png"
+          alt="services"
+          width={300}
+          height={300}
           alt="services"
         />
         <div className={styles.service_hero_text}>
@@ -218,7 +220,7 @@ const services = () => {
           transition={{ delay: 0.1, duration: 0.4 }}
           className={styles.service_ecommerce_wrap}
         >
-          <Image
+          <img
             className={styles.service_ecommerce_img}
             src="service_cart.png"
             alt="ecommerce"
@@ -353,7 +355,7 @@ const services = () => {
               </Link>
             </div>
           </div>
-          <Image
+          <img
             className={styles.service_cms_img}
             src="service_cms.png"
             alt="cms"
@@ -422,7 +424,7 @@ const services = () => {
           transition={{ delay: 0.1, duration: 0.4 }}
           className={styles.service_analytics_wrap}
         >
-          <Image
+          <img
             className={styles.service_analytics_img}
             src="service_analytics.png"
             alt="analytics"
