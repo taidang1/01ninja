@@ -34,6 +34,8 @@ const support = () => {
             style={{ width: "auto", height: "420px", marginRight: "-30px" }}
             source
             src="/support_hero.mp4"
+            type="video/mp4"
+            playsInline
             autoPlay
             loop
             muted

@@ -3,7 +3,7 @@ import styles from "@/styles/Home.module.css";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import { Swiper, SwiperSlide } from "swiper/react";
 import AddBusinessIcon from "@mui/icons-material/AddBusiness";
-import React, { useRef, useState } from "react";
+import React, { Suspense } from "react";
 import "swiper/css";
 import ShopIcon from "@mui/icons-material/Shop";
 import TuneIcon from "@mui/icons-material/Tune";
@@ -27,6 +27,8 @@ import Rating from "@mui/material/Rating";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import { styled } from "@mui/material/styles";
+import MuxVideo from '@mux/mux-video-react';
+import Skeleton from "@mui/material/Skeleton";
 
 const StyledRating = styled(Rating)({
   "& .MuiRating-iconFilled": {
@@ -42,39 +44,154 @@ export default function Home(props) {
     <section>
       <div className={styles.home_top}></div>
       <div className={styles.homepage}>
-        <div className={styles.hero_backdrop}></div>
+    
+        <div className={styles.video_wrap} >
+        
+      
+        <MuxVideo
+        className={styles.hero_video} 
+        style={{borderRadius: '35px', minHeight:'100%', minWidth:'100%',   boxShadow:'rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px'}}
+        playbackId="CXBX02Ds4bKeMmQYLKPgbFOjaMKLPhZ00hov101OflqAEA"
+        metadata={{
+          video_id: 'video-id-123456',
+          video_title: 'Super Interesting Video',
+          viewer_user_id: 'user-id-bc-789',
+        }}
+        streamType="on-demand"
+      
+        autoPlay
+        muted
+        loop
+        > 
+     
+        </MuxVideo>
+          <MuxVideo
+         
+         className={styles.hero_video2} 
+         style={{borderRadius: '35px', minHeight:'100%', minWidth:'100%', maxHeight:'100%',maxWidth:'100%',  boxShadow:'rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px'}}
+         playbackId="RIlxk81T66ZKdiWnlXyT8fyusU7NRoxnRm01wSilZ00Ew"
+        metadata={{
+          video_id: 'video-id-123',
+          video_title: 'Super Interesting Video',
+          viewer_user_id: 'user-id-bc-789',
+          
+        }}
+        streamType="on-demand"
+        
+        playsInline
+        autoPlay
+        muted
+        loop
+        > </MuxVideo>
+      </div>
+      
+      
         <div className={styles.home_slogan}>
-          <h1 style={{ color: "#FAF9F7", textAlign: "left" }}>
+
+          <motion.h1 initial={{ y: 50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.3 }} className={styles.hero_title} style={{ color: "#FAF9F7", textAlign: "center" }}>
             Transforming ideas into solutions.
-          </h1>
-          <p
+          </motion.h1>
+          <motion.p initial={{ y: 50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.3, delay: .2 }}className={styles.hero_subtitle}
             style={{
               color: "#FAF9F7",
               fontSize: "18px",
               paddingTop: "12px",
               lineHeight: "1.2",
               paddingBottom: "12px",
-              textAlign: "left",
+              textAlign: "center",
+              maxWidth: "600px",
             }}
           >
             Our team of experienced developers and designers are ready to help
             you build your next project.
-          </p>
+          </motion.p>
           <div className={styles.home_btn_group}>
             <Link href="/becomeapartner">
-            <button
+            <motion.button initial={{ scale:0, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.3, delay: .4, type: "spring", stiffness: 100}}
               style={{ display: "flex", alignItems: "center", color:'#1D1A13' }}
               className={styles.home_btn}
             >
               Contact us
               <PhoneCallbackIcon style={{ marginLeft: "4px", color:'#1D1A13' }} />
-            </button>
+            </motion.button>
             </Link>
             <Link href="/about">
-            <button className={styles.home_btn2}>learn more</button>
+            <motion.button initial={{  opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.3, delay: .9 }} className={styles.home_btn2}>learn more</motion.button>
             </Link>
           </div>
         </div>
+      </div>
+      <div className={styles.home_banner}>
+        <div className={styles.home_banner_wrap}>
+            <motion.div initial={{ x: 50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.3, delay:.1 }}  className={styles.banner_box_one}>
+              <img className={styles.banner_one} src="banner_one.png" alt="" />
+              <div className={styles.banner_text_wrapper2}>
+                <Link href="/services">
+              <p className={styles.banner_text}>Cannabis shops<ArrowForwardIosIcon
+                style={{ fontSize: "16px", marginLeft: "6px", marginTop: "3px" }}
+              /></p>
+              </Link>
+              <p className={styles.banner_des}>Software solutions for recreational and medical dispensaries</p>
+              </div>
+            </motion.div>
+            <motion.div initial={{ x: 50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.3, delay: .3 }} className={styles.banner_box_two}>
+            <img className={styles.banner_one} src="banner_two.png" alt="" />
+            <div className={styles.banner_text_wrapper}>
+              <Link href="/services/ecommerce">
+            <p className={styles.banner_text}>Ecommerce<ArrowForwardIosIcon
+                style={{ fontSize: "16px", marginLeft: "6px", marginTop: "3px" }}
+              /></p>
+              </Link>
+            <p className={styles.banner_des}>Specialized ecommerce software specifically for dispensaries</p>
+            </div>
+            </motion.div>
+            <motion.div initial={{ x: 50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.3, delay:.6}} className={styles.banner_box_three}>
+<img className={styles.banner_one} src="banner_three.png" alt="" />
+<div className={styles.banner_text_wrapper2}>
+            <Link href="/services/custom">
+            <p className={styles.banner_text}>Custom software<ArrowForwardIosIcon
+                style={{ fontSize: "16px", marginLeft: "6px", marginTop: "3px" }}
+              /></p>
+              </Link>
+            <p className={styles.banner_des}>Custom software development for any cannabis development</p>
+            </div>
+            </motion.div>
+            <motion.div initial={{ x: 50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.4, delay:.9 }} className={styles.banner_box_four}>
+            <img className={styles.banner_one} src="banner_four.png" alt="" />
+            <div className={styles.banner_text_wrapper}>
+              <Link href="/services">
+            <p className={styles.banner_text}>Delivery logistics<ArrowForwardIosIcon
+                style={{ fontSize: "16px", marginLeft: "6px", marginTop: "3px" }}
+              /></p>
+              </Link>
+            <p className={styles.banner_des}>Software solutions specifically for cannabis delivery logistics</p>
+            </div>
+            </motion.div>
+            </div>
       </div>
       <div className={styles.home2}>
         <motion.div
@@ -111,9 +228,13 @@ export default function Home(props) {
           </div>
           <video
           className={styles.home2_video}
-            
+          src="/home2_video.mp4"
+      
             source
-            src="/home2_video.mp4"
+            muted="true"
+            
+            type="video/mp4"
+            playsInline
             autoPlay
             loop
             muted
@@ -124,7 +245,7 @@ export default function Home(props) {
         <motion.div   initial={{ y: 200, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: false }}
-          transition={{ duration: 0.4 }} className={styles.home3_wrap}>
+          transition={{ duration: 0.4, delay:.2}} className={styles.home3_wrap}>
           <div
             style={{
               display: "flex",
@@ -942,10 +1063,12 @@ export default function Home(props) {
       </div>
       <div className={styles.home6}>
         <h2>View our live demo! </h2>
+        <Link href="https://demo.01ninjas.com"> 
         <button className={styles.demo_btn}>
           View demo
           <PlayArrowIcon />
         </button>
+        </Link>
       </div>
     </section>
   );

@@ -7,6 +7,9 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import MenuIcon from "@mui/icons-material/Menu";
 import { motion, AnimatePresence } from "framer-motion";
 import CloseIcon from '@mui/icons-material/Close';
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+
+
 
 function HideOnScroll({ children }) {
   const trigger = useScrollTrigger();
@@ -114,31 +117,39 @@ const Navbar = (props) => {
                 >
                   <div className={styles.mobile_links_wrap}>
                     <div  style={{marginTop:'20px'}}>
-                      <button className={styles.nav_close} onClick={handleShow}><CloseIcon/></button>
+                      <button className={styles.nav_close} onClick={handleShow}><CloseIcon style={{color:'#1D1A13', fontSize:'28px'}}/></button>
                     </div>
                     <div
                       onClick={handleShow}
                       className={styles.mobile_singlelink}
                     >
-                      <Link href="/about">About</Link>
+                      <Link href="/about">About<ArrowForwardIosIcon
+                style={{ fontSize: "16px", marginLeft: "6px", }}
+              /></Link>
                     </div>
                     <div
                       onClick={handleShow}
                       className={styles.mobile_singlelink}
                     >
-                      <Link href="/services">Services</Link>
+                      <Link href="/services">Services<ArrowForwardIosIcon
+                style={{ fontSize: "16px", marginLeft: "6px", }}
+              /></Link>
                     </div>
                     <div
                       onClick={handleShow}
                       className={styles.mobile_singlelink}
                     >
-                      <Link href="/price">Pricing</Link>
+                      <Link href="/price">Pricing<ArrowForwardIosIcon
+                style={{ fontSize: "16px", marginLeft: "6px", }}
+              /></Link>
                     </div>
                     <div
                       onClick={handleShow}
                       className={styles.mobile_singlelink}
                     >
-                      <Link href="/about">Demo</Link>
+                      <Link href="/about">Demo<ArrowForwardIosIcon
+                style={{ fontSize: "16px", marginLeft: "6px", }}
+              /></Link>
                     </div>
                     <div>
                       <button onClick={handleShow} className={styles.btn_mobile}>

@@ -38,15 +38,16 @@ p{
     letter-spacing: -0.01em;
 }
 h1{
-    font-size: 4.236em;
+    font-size: 48px;
     font-weight: 500;
     margin: 0;
     line-height: 1.1;
     color: #1F2933;
     font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.03em;
 }
 h2{
-    font-size: 3em;
+    font-size: 30px;
     font-weight: 450;
     line-height: 1.1;
     letter-spacing: -0.03em;

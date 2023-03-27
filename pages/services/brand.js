@@ -17,6 +17,8 @@ const brand = () => {
             style={{ width: "auto", height: "400px" }}
             source
             src="/branding_hero.mp4"
+            type="video/mp4"
+            playsInline
             autoPlay
             loop
             muted

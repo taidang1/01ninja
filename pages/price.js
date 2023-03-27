@@ -36,6 +36,8 @@ const price = () => {
             className={styles.price_overview_video}
             source
             src="/price_steps.mp4"
+            type="video/mp4"
+            playsInline
             autoPlay
             loop
             muted

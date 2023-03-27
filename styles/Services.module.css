@@ -245,6 +245,14 @@ width: auto;
     .overview_box_one{
         width:350px;
     }
+    .overview_box_two{
+        width:350px;
+        padding-top: 20px;
+    }
+    .overview_box_four{
+        width:350px;
+        padding-top: 20px;
+    }
     .service_brand{
         height: auto;
        padding-top: 0px;

@@ -32,6 +32,8 @@ const custom = () => {
           transition={{ delay: 0.3, duration: 0.4 }}
             className={styles.custom_hero_video}
             style={{ width: "auto", height: "400px" }}
+            type="video/mp4"
+            playsInline
             source
             src="/custom_hero.mp4"
             autoPlay

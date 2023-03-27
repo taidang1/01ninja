@@ -1,6 +1,7 @@
 import styles from "../../styles/Services.module.css";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { motion } from "framer-motion";
+import Image from 'next/image';
 
 import Link from "next/link";
 import HandshakeIcon from "@mui/icons-material/Handshake";
@@ -15,7 +16,7 @@ const services = () => {
         <motion.div    initial={{ opacity: 0, scale: 0 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.1, duration: 0.6, type: "spring" }} className={styles.service_hero_wrap}>
-        <img
+        <Image
           className={styles.service_hero_img}
           src="service_hero_canna.png"
           alt="services"
@@ -201,6 +202,8 @@ const services = () => {
             style={{ width: "auto", height: "450px" }}
             source
             src="/service_brand.mp4"
+            type="video/mp4"
+            playsInline
             autoPlay
             loop
             muted
@@ -215,7 +218,7 @@ const services = () => {
           transition={{ delay: 0.1, duration: 0.4 }}
           className={styles.service_ecommerce_wrap}
         >
-          <img
+          <Image
             className={styles.service_ecommerce_img}
             src="service_cart.png"
             alt="ecommerce"
@@ -299,6 +302,8 @@ const services = () => {
             style={{ width: "auto", height: "400px" }}
             source
             src="/service_three.mp4"
+            type="video/mp4"
+            playsInline
             autoPlay
             loop
             muted
@@ -348,7 +353,7 @@ const services = () => {
               </Link>
             </div>
           </div>
-          <img
+          <Image
             className={styles.service_cms_img}
             src="service_cms.png"
             alt="cms"
@@ -401,6 +406,8 @@ const services = () => {
             style={{ width: "auto", height: "500px" }}
             source
             src="/service_support.mp4"
+            type="video/mp4"
+            playsInline
             autoPlay
             loop
             muted
@@ -415,7 +422,7 @@ const services = () => {
           transition={{ delay: 0.1, duration: 0.4 }}
           className={styles.service_analytics_wrap}
         >
-          <img
+          <Image
             className={styles.service_analytics_img}
             src="service_analytics.png"
             alt="analytics"

@@ -1,12 +1,10 @@
 .homepage {
   height: 90vh;
-  width: 97%;
+  width: 96%;
   margin-top: 40px;
-background-size: cover;
-background-repeat: none;
-background-position: bottom center;
+
 position: relative;
-  background-image: url("/01ninjas_home.png");
+
   color: #1F2933;
   box-shadow: none;
   display: flex;
@@ -18,12 +16,36 @@ position: relative;
   margin-top: 12px;
 border-radius: 25px;
 z-index: 99;
-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 
 }
 .home_top{
   height:14vh;
 }
+.hero_video{
+  height: auto;
+  width: 100%;
+  
+  z-index: 8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+  
+  
+}
+.video_wrap{
+  border-radius: 35px;
+  height: auto;
+  width: 100%;
+  background-color: #1D1A13;
+ 
+
+
+}
+
+
+
 
 .home_slogan{
   display: flex;
@@ -31,11 +53,15 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3)
   justify-content: center;
   align-items: center;
   width: 60%;
-  margin-top:90px;
+  margin-top:20px;
   text-align: center;
-  position: fixed;
+  position: absolute;
   z-index: 10;
 
+}
+.hero_title{
+  -webkit-text-stroke-width: 2px;
+  text-shadow: 2.5px 2.5px 0 #27241D;
 }
 .home_btn{
   padding:16px 18px;
@@ -69,6 +95,85 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3)
  margin: 20px;
   
 }
+.home_banner{
+  height: auto;
+}
+.banner_one{
+  height: 90px;
+  width: auto;
+  background-color: #27241D;
+  padding:20px;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+
+}
+.banner_one:active{
+  box-shadow: none;
+  transition: ease-in-out .1s;
+  
+}
+.banner_des{
+  font-size: 14px !important;
+}
+.banner_box_one{
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center !important;
+  
+
+}
+.banner_box_two{
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center !important;
+}
+.banner_box_three{
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center !important;
+}
+.banner_box_four{
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center !important;
+}
+.home_banner_wrap{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+.banner_text{
+  text-decoration: underline;
+  text-decoration-color: #51CA58;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+.banner_text{
+  font-weight: 500;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
 .home2{
   height:auto;
   padding: 60px 90px;
@@ -84,8 +189,9 @@ background-color: #E8E6E1;
   align-items: center;
 }
 .home2_video{
-  height:450px;
+  height:400px;
   width:auto;
+  
 }
 .home3{
   height:auto;
@@ -107,13 +213,16 @@ background-color: #1D1A13;
 }
 
 .hero_backdrop{
-  background:#27241D;
-  border-radius: 25px;
+  background:
+  #27241D;
+  border-radius: 35px;
     position: absolute;
-  height: 100%;
+  height: 96%;
   width: 100%;
   z-index:9;
-  opacity: .6;
+  opacity: .4;
+ 
+  
 }
 .home2_text{
   width: 40%;
@@ -191,6 +300,9 @@ display: flex;
 
 
 
+}
+.hero_video2{
+  display:none;
 }
 .home5_wrap{
   padding-top: 90px;
@@ -322,6 +434,7 @@ width:300px;
 @media screen and (max-device-width: 640px) {
   .homepage {
     height: 45vh;
+    width: 90%;
   }
 
   .home_slogan{
@@ -332,13 +445,31 @@ width:300px;
     width: 85%;
     margin-top:30px;
     text-align: center;
-    position: fixed;
+   
     z-index: 10;
   
   }
-  .home_slogan h1{
-    font-size: 3em;
+  .hero_video{
+   position: relative;
+   bottom: 46%;
+   display: none;
   }
+  .hero_video2{
+    display: flex !important;
+    position: relative;
+  top: 0%;
+  }
+  .hero_subtitle{
+    margin-top: 30px !important;
+    color: #FAF9F7!important;
+  }
+  .home_btn{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px !important;
+  }
+  .hero_title{
+    font-size: 2.5em !important;
+  }
+ 
   .home2_wrap{
     display: flex;
     flex-direction: column;
@@ -410,6 +541,9 @@ width:300px;
 }
 .home3_slider{
   margin-bottom: 30px;
+}
+.hero_backdrop{
+  display: none;
 }
 
 .swiper_slider_tech{
@@ -486,6 +620,98 @@ min-width: 200px;
 }
 .swiper_five{
   margin:0px 20px !important;
+}
+
+
+
+.home_banner{
+  height: auto;
+  z-index: 9;
+  position: relative;
+}
+.banner_one{
+  height: 80px;
+  width: auto;
+  background-color: #27241D;
+  padding:20px;
+  border-radius: 25px;
+  
+}
+
+.banner_des{
+  font-size: 14px !important;
+}
+.banner_box_one{
+  max-width: 350px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center !important;
+  
+  text-align: left!important;
+  padding-bottom: 12px;
+
+}
+.banner_box_two{
+  max-width: 350px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: left !important;
+  padding-bottom: 12px;
+}
+.banner_box_three{
+  max-width: 350px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: left !important;
+  padding-bottom: 12px;
+}
+.banner_box_four{
+  max-width: 350px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: left !important;
+  padding-bottom: 12px;
+}
+.home_banner_wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ width: 100%;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.banner_text{
+  font-weight: 500;
+  padding-top: 20px;
+  min-width: 200px;
+  padding-bottom: 10px;
+  justify-content: flex-start;
+ 
+  position: relative;
+}
+.banner_text_wrapper{
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  margin-left: 30px;
+}
+.banner_text_wrapper2{
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  margin-left: 30px;
+}
+.video_wrap{
+  height: auto;
+  width: 100%;
+  min-height: 90%;
+  
 }
 
 }
