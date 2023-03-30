@@ -2,6 +2,7 @@ import styles from "@/styles/Home.module.css";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import { Swiper, SwiperSlide } from "swiper/react";
 import AddBusinessIcon from "@mui/icons-material/AddBusiness";
+import React, { Suspense } from "react";
 import "swiper/css";
 import ShopIcon from "@mui/icons-material/Shop";
 import TuneIcon from "@mui/icons-material/Tune";
@@ -26,7 +27,9 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import { styled } from "@mui/material/styles";
 import MuxVideo from "@mux/mux-video-react";
+import Skeleton from "@mui/material/Skeleton";
 import Image from "next/image";
+import Head from "next/head";
 
 const StyledRating = styled(Rating)({
   "& .MuiRating-iconFilled": {
@@ -37,9 +40,17 @@ const StyledRating = styled(Rating)({
   },
 });
 
-export default function Home() {
+export default function Home(props) {
   return (
     <section>
+      <Head>
+        <title>Canva: Solution for Cannabis ecommerce</title>
+        <meta
+          property="og:title"
+          content="Join us to expand the cannabis industry with beautiful, intergrated ecommerce website"
+          key="title"
+        />
+      </Head>
       <div className={styles.home_top}></div>
       <div className={styles.homepage}>
         <div className={styles.video_wrap}>
@@ -86,6 +97,7 @@ export default function Home() {
             muted
             loop
           >
+            {" "}
           </MuxVideo>
         </div>
 
@@ -169,7 +181,7 @@ export default function Home() {
           >
             <Image
               className={styles.banner_one}
-              src="/banner_one.svg"
+              src="/banner_one.png"
               alt=""
               width={200}
               height={200}
@@ -203,7 +215,7 @@ export default function Home() {
               width={200}
               height={200}
               className={styles.banner_one}
-              src="/banner_two.svg"
+              src="/banner_two.png"
               alt=""
             />
             <div className={styles.banner_text_wrapper}>
@@ -235,7 +247,7 @@ export default function Home() {
               width={200}
               height={200}
               className={styles.banner_one}
-              src="/banner_three.svg"
+              src="/banner_three.png"
               alt=""
             />
             <div className={styles.banner_text_wrapper2}>
@@ -267,7 +279,7 @@ export default function Home() {
               width={200}
               height={200}
               className={styles.banner_one}
-              src="/banner_four.svg"
+              src="/banner_four.png"
               alt=""
             />
             <div className={styles.banner_text_wrapper}>
@@ -731,7 +743,7 @@ export default function Home() {
                   width={300}
                   height={300}
                   className={styles.swiper_slide_image}
-                  src="/software_one.svg"
+                  src="/software_one.png"
                 />
                 <div className={styles.software_img_text}>
                   <p
@@ -756,7 +768,7 @@ export default function Home() {
                   width={300}
                   height={300}
                   className={styles.swiper_slide_image}
-                  src="/software_two.svg"
+                  src="/software_two.png"
                 />
                 <div className={styles.software_img_text}>
                   <p
@@ -782,7 +794,7 @@ export default function Home() {
                   width={300}
                   height={300}
                   className={styles.swiper_slide_image}
-                  src="/software_three.svg"
+                  src="/software_three.png"
                 />
                 <div className={styles.software_img_text}>
                   <p
@@ -808,7 +820,7 @@ export default function Home() {
                   width={300}
                   height={300}
                   className={styles.swiper_slide_image}
-                  src="/software_four.svg"
+                  src="/software_four.png"
                 />
                 <div className={styles.software_img_text}>
                   <p
@@ -874,8 +886,8 @@ export default function Home() {
             <SwiperSlide className={styles.swiper_slider_tech}>
               <div className={styles.swipe_tech_wrap}>
                 <Image
-                  width={40}
-                  height={40}
+                  width={400}
+                  height={400}
                   className={styles.tech_img}
                   src="/mongodb_icon.png"
                   alt="mongo"
@@ -886,8 +898,8 @@ export default function Home() {
             <SwiperSlide className={styles.swiper_slider_tech}>
               <div className={styles.swipe_tech_wrap}>
                 <Image
-                  width={40}
-                  height={40}
+                  width={400}
+                  height={400}
                   className={styles.tech_img}
                   src="/aws_ec2.png"
                   alt="aws ec2"
@@ -898,8 +910,8 @@ export default function Home() {
             <SwiperSlide className={styles.swiper_slider_tech}>
               <div className={styles.swipe_tech_wrap}>
                 <Image
-                  width={40}
-                  height={40}
+                  width={400}
+                  height={400}
                   className={styles.tech_img}
                   src="/aws_icon.png"
                   alt="aws "
@@ -913,8 +925,8 @@ export default function Home() {
             <SwiperSlide className={styles.swiper_slider_tech}>
               <div className={styles.swipe_tech_wrap}>
                 <Image
-                  width={40}
-                  height={40}
+                  width={400}
+                  height={400}
                   className={styles.tech_img}
                   src="/nextjs.png"
                   alt="next js"
