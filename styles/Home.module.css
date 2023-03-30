@@ -393,7 +393,7 @@
 
 @media screen and (max-device-width: 640px) {
   .homepage {
-    height: 90vh;
+    height: 45vh;
     width: 90%;
   }
 
