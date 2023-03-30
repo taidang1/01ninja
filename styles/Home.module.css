@@ -238,7 +238,14 @@
   width: 100%;
   display: flex;
 }
+<<<<<<< HEAD
 .software_img_text {
+=======
+.home4_swiper{
+  background-color: #27241D;
+}
+.software_img_text{
+>>>>>>> bcd3004 (image opt)
   position: absolute;
   width: 50%;
   z-index: 999;
@@ -379,7 +386,12 @@
 }
 .tech_img {
   display: flex;
+<<<<<<< HEAD
   height: 60px;
+=======
+  height:60px;
+  width: 60px;
+>>>>>>> bcd3004 (image opt)
   border-radius: 5px;
 }
 .swipe_tech_wrap {
@@ -393,8 +405,8 @@
 
 @media screen and (max-device-width: 640px) {
   .homepage {
-    height: 45vh;
-    width: 90%;
+    max-height: 50vh;
+    max-width: 95%;
   }
 
   .home_slogan {

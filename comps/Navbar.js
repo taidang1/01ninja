@@ -8,6 +8,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { motion, AnimatePresence } from "framer-motion";
 import CloseIcon from '@mui/icons-material/Close';
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import Image from "next/image";
 
 
 
@@ -68,10 +69,12 @@ const Navbar = (props) => {
           <div className={styles.content}>
             <div className={styles.logo}>
               <Link href="/">
-                <img
-                  src="/ninjas_logo.png"
-                  style={{ width: "40px", height: "auto" }}
+                <Image
+                  src="/ninjas_logo.svg"
+                  style={{ width: "40px", height: "40px" }}
                   alt="logo"
+                  width={40}
+                  height={40}
                 />
               </Link>
               <p
