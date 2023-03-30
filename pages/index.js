@@ -192,7 +192,6 @@ export default function Home(props) {
               </Link>
               <p className={styles.banner_des}>
                 Software solutions for recreational and medical dispensaries
-                1123
               </p>
             </div>
           </motion.div>
