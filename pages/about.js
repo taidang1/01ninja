@@ -159,7 +159,7 @@ const about = () => {
           <Image width={300} height={300}
             className={styles.about_us_img}
             src="/about_us.png"
-            alt="about us"
+            alt="about us now"
           />
         </motion.div>
       </div>
