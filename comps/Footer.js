@@ -46,7 +46,9 @@ const Footer = () => {
                 <Link href="/price">
                 <p className={styles.footer_p}>Pricing</p>
                 </Link>
+                <Link href="https://demo.01ninjas.com">
                 <button className={styles.footer_demo}>Demo <PlayArrowIcon/></button>
+                </Link>
             </div>
             <div className={styles.footer_resources}>
                 <p style={{color:'#D3CEC4', paddingBottom:'10px', fontSize:'14px'}}>resources</p>
@@ -74,8 +76,8 @@ const Footer = () => {
             </div>
             <div className={styles.footer_contact}>
                 <p style={{color:'#D3CEC4', paddingBottom:'10px', fontSize:'14px'}}>contact</p>
-                <p style={{color:'#fff'}} className={styles.footer_p}>+1(201) 328-7539</p>
-                <p className={styles.footer_p}>shanonmcdonald@01ninjas.com</p>
+                <p style={{color:'#fff'}} className={styles.footer_p}>+1(201)328-7539</p>
+                <p className={styles.footer_p}>canna@01ninjas.com</p>
                 <div>
                     <Link href="/becomeapartner">
                 <button className={styles.footer_demo}>Join us <FavoriteIcon style={{paddingLeft:'6px', color:'#27241D'}}/></button>

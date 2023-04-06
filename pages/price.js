@@ -114,7 +114,7 @@ const price = () => {
             <div className={styles.box_two_price}>
               <p>Full service</p>
               <h2>
-                499
+                999
                 <span style={{ fontSize: "16px", fontWeight: "400" }}>/mo</span>
               </h2>
               <button className={styles.price_call}>Book a call</button>
