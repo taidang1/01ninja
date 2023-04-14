@@ -2,7 +2,6 @@ import styles from "@/styles/Home.module.css";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import { Swiper, SwiperSlide } from "swiper/react";
 import AddBusinessIcon from "@mui/icons-material/AddBusiness";
-import React, { Suspense } from "react";
 import "swiper/css";
 import ShopIcon from "@mui/icons-material/Shop";
 import TuneIcon from "@mui/icons-material/Tune";
@@ -27,9 +26,7 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import { styled } from "@mui/material/styles";
 import MuxVideo from "@mux/mux-video-react";
-import Skeleton from "@mui/material/Skeleton";
 import Image from "next/image";
-import Head from "next/head";
 
 const StyledRating = styled(Rating)({
   "& .MuiRating-iconFilled": {
@@ -40,17 +37,9 @@ const StyledRating = styled(Rating)({
   },
 });
 
-export default function Home(props) {
+export default function Home() {
   return (
     <section>
-      <Head>
-        <title>Canva: Solution for Cannabis ecommerce</title>
-        <meta
-          property="og:title"
-          content="Join us to expand the cannabis industry with beautiful, intergrated ecommerce website"
-          key="title"
-        />
-      </Head>
       <div className={styles.home_top}></div>
       <div className={styles.homepage}>
         <div className={styles.video_wrap}>
@@ -97,7 +86,6 @@ export default function Home(props) {
             muted
             loop
           >
-            {" "}
           </MuxVideo>
         </div>
 
@@ -886,8 +874,8 @@ export default function Home(props) {
             <SwiperSlide className={styles.swiper_slider_tech}>
               <div className={styles.swipe_tech_wrap}>
                 <Image
-                  width={400}
-                  height={400}
+                  width={40}
+                  height={40}
                   className={styles.tech_img}
                   src="/mongodb_icon.png"
                   alt="mongo"
@@ -898,8 +886,8 @@ export default function Home(props) {
             <SwiperSlide className={styles.swiper_slider_tech}>
               <div className={styles.swipe_tech_wrap}>
                 <Image
-                  width={400}
-                  height={400}
+                  width={40}
+                  height={40}
                   className={styles.tech_img}
                   src="/aws_ec2.png"
                   alt="aws ec2"
@@ -910,8 +898,8 @@ export default function Home(props) {
             <SwiperSlide className={styles.swiper_slider_tech}>
               <div className={styles.swipe_tech_wrap}>
                 <Image
-                  width={400}
-                  height={400}
+                  width={40}
+                  height={40}
                   className={styles.tech_img}
                   src="/aws_icon.png"
                   alt="aws "
@@ -925,8 +913,8 @@ export default function Home(props) {
             <SwiperSlide className={styles.swiper_slider_tech}>
               <div className={styles.swipe_tech_wrap}>
                 <Image
-                  width={400}
-                  height={400}
+                  width={40}
+                  height={40}
                   className={styles.tech_img}
                   src="/nextjs.png"
                   alt="next js"
@@ -1254,3 +1242,4 @@ export default function Home(props) {
     </section>
   );
 }
+
