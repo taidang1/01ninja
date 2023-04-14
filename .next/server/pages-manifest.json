@@ -2,7 +2,16 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/services/brand": "pages/services/brand.js",
-  "/about": "pages/about.js",
-  "/": "pages/index.js"
+  "/about": "pages/about.html",
+  "/api/hello": "pages/api/hello.js",
+  "/": "pages/index.html",
+  "/becomeapartner": "pages/becomeapartner.html",
+  "/price": "pages/price.html",
+  "/services/brand": "pages/services/brand.html",
+  "/services/cms": "pages/services/cms.html",
+  "/services/custom": "pages/services/custom.html",
+  "/services/ecommerce": "pages/services/ecommerce.html",
+  "/services": "pages/services.html",
+  "/services/support": "pages/services/support.html",
+  "/404": "pages/404.html"
 }
