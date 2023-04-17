@@ -908,7 +908,16 @@ export default function Home() {
               </div>
             </SwiperSlide>
             <SwiperSlide className={styles.swiper_slider_tech}>
-              Slide 4
+              <div className={styles.swipe_tech_wrap}>
+                <Image
+                  width={400}
+                  height={400}
+                  className={styles.tech_img}
+                  src="/side_route.png"
+                  alt="aws s3"
+                />  
+              <p>Route 53</p>
+              </div>
             </SwiperSlide>
             <SwiperSlide className={styles.swiper_slider_tech}>
               <div className={styles.swipe_tech_wrap}>
@@ -923,8 +932,16 @@ export default function Home() {
               </div>
             </SwiperSlide>
             <SwiperSlide className={styles.swiper_slider_tech}>
-              Slide 6
-            </SwiperSlide>
+            <div className={styles.swipe_tech_wrap}>
+                <Image
+                  width={400}
+                  height={400}
+                  className={styles.tech_img}
+                  src="/sagemaker.png"
+                  alt="sage js"
+                />
+                <p>Sagemaker</p>
+              </div>            </SwiperSlide>
             <SwiperSlide className={styles.swiper_slider_tech}>
               <div className={styles.swipe_tech_wrap}>
                 <Image
@@ -938,8 +955,16 @@ export default function Home() {
               </div>
             </SwiperSlide>
             <SwiperSlide className={styles.swiper_slider_tech}>
-              Slide 8
-            </SwiperSlide>
+            <div className={styles.swipe_tech_wrap}>
+                <Image
+                  width={400}
+                  height={400}
+                  className={styles.tech_img}
+                  src="/dynamodb.png"
+                  alt="next js"
+                />
+                <p>Dynamodb</p>
+              </div>            </SwiperSlide>
             <SwiperSlide className={styles.swiper_slider_tech}>
               <div className={styles.swipe_tech_wrap}>
                 <Image
@@ -953,8 +978,16 @@ export default function Home() {
               </div>
             </SwiperSlide>
             <SwiperSlide className={styles.swiper_slider_tech}>
-              Slide 9
-            </SwiperSlide>
+            <div className={styles.swipe_tech_wrap}>
+                <Image
+                  width={400}
+                  height={400}
+                  className={styles.tech_img}
+                  src="/lambda.png"
+                  alt="next js"
+                />
+                <p>Lambda</p>
+              </div>            </SwiperSlide>
             <SwiperSlide className={styles.swiper_slider_tech}>
               <div className={styles.swipe_tech_wrap}>
                 <Image
@@ -968,7 +1001,16 @@ export default function Home() {
               </div>
             </SwiperSlide>
             <SwiperSlide className={styles.swiper_slider_tech}>
-              Slide 9
+            <div className={styles.swipe_tech_wrap}>
+                <Image
+                  width={400}
+                  height={400}
+                  className={styles.tech_img}
+                  src="/pinpoint.png"
+                  alt="next js"
+                />
+                <p>Pinpoint</p>
+              </div>
             </SwiperSlide>
             <SwiperSlide className={styles.swiper_slider_tech}>
               <div className={styles.swipe_tech_wrap}>
@@ -983,7 +1025,16 @@ export default function Home() {
               </div>
             </SwiperSlide>
             <SwiperSlide className={styles.swiper_slider_tech}>
-              Slide 9
+            <div className={styles.swipe_tech_wrap}>
+                <Image
+                  width={400}
+                  height={400}
+                  className={styles.tech_img}
+                  src="/chatbot.png"
+                  alt="Chatbot Lex"
+                />
+                <p>Lex chatbot</p>
+              </div>
             </SwiperSlide>
             <SwiperSlide className={styles.swiper_slider_tech}>
               Slide 9
@@ -1230,6 +1281,7 @@ export default function Home() {
           </Swiper>
         </motion.div>
       </div>
+    
       <div className={styles.home6}>
         <h2>View our live demo! </h2>
         <Link href="https://demo.01ninjas.com">

@@ -435,6 +435,8 @@ width:300px;
 }
 
 
+
+
 @media screen and (max-device-width: 640px) {
   .homepage {
     max-height: 50vh;

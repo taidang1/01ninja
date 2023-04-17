@@ -39,7 +39,7 @@ const ecommerce = () => {
               </button>
             </div>
           </motion.div>
-          <motion.Image width={300} height={300}
+          <Image width={500} height={500}
             initial={{ x: 120, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.5 }}

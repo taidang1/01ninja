@@ -68,6 +68,10 @@ const Navbar = (props) => {
         >
           <div className={styles.content}>
             <div className={styles.logo}>
+              <motion.div
+              whileTap={{ rotate: -390, scale: 1 }}
+              transition={{ duration: 0.2, type: "tween" }}
+              >
               <Link href="/">
                 <Image
                   src="/ninjas_logo.svg"
@@ -77,6 +81,7 @@ const Navbar = (props) => {
                   height={40}
                 />
               </Link>
+              </motion.div>
               <p
                 style={{
                   fontWeight: "550",
