@@ -258,7 +258,7 @@ languages with just a few clicks.
                 <div>
                   <p style={{fontWeight:'500', paddingBottom:'10px'}}>Streamlined</p>
                   <p>
-                All changes you make to your content will be stored and integrated throughout your cloud infrastructure.
+                Changes you make to your content will be stored and integrated throughout your cloud infrastructure.
                   </p>
                 </div>
               </div>
