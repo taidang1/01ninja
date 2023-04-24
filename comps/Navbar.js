@@ -131,13 +131,13 @@ const Navbar = (props) => {
                       onClick={handleShow}
                       className={styles.mobile_singlelink}
                     >
-                      <motion.div initial={{opacity:0, y:20}} transition={{delay:.1, duration:.6}} whileInView={{opacity:1, y:0}}>
+                      <motion.div initial={{opacity:0, y:20}} transition={{delay:.1, duration:.3}} whileInView={{opacity:1, y:0}}>
                       <Link className={styles.mobiletext} href="/about">About<ArrowForwardIosIcon
                 style={{ fontSize: "16px", marginLeft: "6px", }}
               /></Link>
               </motion.div>
                     </div>
-                    <motion.div initial={{opacity:0,y:20}} transition={{delay:.5, duration:.6,type:'tween'}} whileInView={{opacity:1, y:0}}
+                    <motion.div initial={{opacity:0,y:20}} transition={{delay:.2, duration:.3,type:'tween'}} whileInView={{opacity:1, y:0}}
                       onClick={handleShow}
                       className={styles.mobile_singlelink}
                     >
@@ -146,7 +146,7 @@ const Navbar = (props) => {
                 style={{ fontSize: "16px", marginLeft: "6px", }}
               /></Link>
                     </motion.div>
-                    <motion.div initial={{opacity:0, y:20}} transition={{delay:.9, duration:.6,type:'tween'}} whileInView={{opacity:1, y:0}}
+                    <motion.div initial={{opacity:0, y:20}} transition={{delay:.3, duration:.3,type:'tween'}} whileInView={{opacity:1, y:0}}
                       onClick={handleShow}
                       className={styles.mobile_singlelink}
                     >
@@ -154,7 +154,7 @@ const Navbar = (props) => {
                 style={{ fontSize: "16px", marginLeft: "6px", }}
               /></Link>
                     </motion.div>
-                    <motion.div initial={{opacity:0, y:20}} transition={{delay:1.2, duration:.6, type:'tween'}}  whileInView={{opacity:1, y:0}}
+                    <motion.div initial={{opacity:0, y:20}} transition={{delay:.4, duration:.3, type:'tween'}}  whileInView={{opacity:1, y:0}}
                       onClick={handleShow}
                       className={styles.mobile_singlelink}
                     >

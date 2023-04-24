@@ -60,24 +60,33 @@
 }
 .ecommerce_two_box_one{
     height:200px;
-    width: 300px;
+    width: 330px;
     background-color: #FAF9F7;
     border-radius: 25px;
     padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 .ecommerce_two_box_two{
     height:200px;
-    width: 300px;
+    width: 330px;
     background-color: #FAF9F7;
     border-radius: 25px;
     padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 .ecommerce_two_box_three{
     height:200px;
-    width: 300px;
+    width: 330px;
     background-color: #FAF9F7;
     border-radius: 25px;
     padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 .ecommerce_three{
     height: auto;

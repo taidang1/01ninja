@@ -66,9 +66,13 @@ const ecommerce = () => {
                 padding: "12px",
                 fontSize: "58px",
                 borderRadius: "10px",
+                marginRight: '12px'
               }}
             />
+            <div style={{display:'flex', flexDirection:'column'}}>
             <p style={{ fontWeight: "500" }}>Full control</p>
+            <p>Developed to meet your specific needs and requirements of your business.</p>
+          </div>
           </div>
           <div className={styles.ecommerce_two_box_two}>
             <EscalatorIcon
@@ -79,9 +83,13 @@ const ecommerce = () => {
                 padding: "12px",
                 fontSize: "58px",
                 borderRadius: "10px",
+                marginRight: '12px'
               }}
             />
+                <div style={{display:'flex', flexDirection:'column'}}>
             <p style={{ fontWeight: "500" }}>Scalable</p>
+            <p>Created with scalability in mind, ecommerce software that grows and evolves with your business.</p>
+          </div>
           </div>
           <div className={styles.ecommerce_two_box_three}>
             <SportsIcon
@@ -92,9 +100,14 @@ const ecommerce = () => {
                 padding: "12px",
                 fontSize: "58px",
                 borderRadius: "10px",
+                marginRight: '12px'
               }}
             />
+                            <div style={{display:'flex', flexDirection:'column'}}>
+
             <p style={{ fontWeight: "500" }}>Better start</p>
+            <p>Start with a unique and superior ecommerce system developed with features to benefit your business and customers.</p>
+          </div>
           </div>
         </div>
       </motion.div>

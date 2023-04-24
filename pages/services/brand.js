@@ -47,8 +47,8 @@ const brand = () => {
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: false }}
           transition={{ duration: 0.4, delay:.2 }} className={styles.brand_two}>
-        <h2 className={styles.brand_two_title} style={{ textAlign: "center", padding: "60px 0" }}>
-          Dont use third party iframes
+        <h2 className={styles.brand_two_title} style={{ textAlign: "center", paddingTop:'60px', paddingBottom:'10px'}}>
+          Dont settle for third party iframes
         </h2>
         <p className={styles.brand_two_text} style={{ textAlign: "center", paddingBottom: "60px" }}>
           We help you build your brand and grow your business. Dont settle for
@@ -65,11 +65,15 @@ const brand = () => {
                 fontSize: "58px",
                 borderRadius: "10px",
                 marginBottom: "12px",
+                marginRight: "12px",
               }}
             />
-            <p style={{ paddingBottom: "12px", fontWeight: "500" }}>
+            <div style={{display:'flex', flexDirection:'column'}}>
+            <p style={{ paddingBottom: "10px", fontWeight: "500" }}>
               Credibility
             </p>
+            <p>Enhanced with a professional appearance, branding consistency, and superior user experience.</p>
+          </div>
           </div>
           <div className={styles.brand_two_box_two}>
             <QueryStatsIcon
@@ -81,11 +85,15 @@ const brand = () => {
                 fontSize: "58px",
                 borderRadius: "10px",
                 marginBottom: "12px",
+                marginRight: "12px",
               }}
             />
-            <p style={{ paddingBottom: "12px", fontWeight: "500" }}>
+            <div style={{display:'flex', flexDirection:'column'}}>
+            <p style={{ paddingBottom: "10px", fontWeight: "500" }}>
               Marketing
             </p>
+            <p>A competitive advantage by helping an online store stand out in a crowded marketplace.</p>
+          </div>
           </div>
           <div className={styles.brand_two_box_three}>
             <LanguageIcon
@@ -97,9 +105,13 @@ const brand = () => {
                 fontSize: "58px",
                 borderRadius: "10px",
                 marginBottom: "12px",
+                marginRight: "12px",
               }}
             />
+            <div style={{display:'flex', flexDirection:'column'}}>
             <p style={{ paddingBottom: "12px", fontWeight: "500" }}>SEO</p>
+            <p>Native branding improves brand related keywords for search optimization rankings/ </p>
+          </div>
           </div>
         </div>
       </motion.div>

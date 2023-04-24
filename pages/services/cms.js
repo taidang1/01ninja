@@ -150,7 +150,7 @@ const cms = () => {
                   />
                 </div>
                 <div>
-                  <p>Convenient editor</p>
+                  <p style={{fontWeight:'500', paddingBottom:'10px'}}>Convenient editor</p>
                   <p>
                     Adding content to our cms is clear and intuitive, you'll
                     become a pro user in 2 minutes.
@@ -170,7 +170,7 @@ const cms = () => {
                   />
                 </div>
                 <div>
-                  <p>Add more sections</p>
+                  <p style={{fontWeight:'500', paddingBottom:'10px'}}>Add more sections</p>
                   <p>
                     Add more sections to your pre-built pages. Make new section
                     layouts from scratch.
@@ -192,10 +192,11 @@ const cms = () => {
                   />
                 </div>
                 <div>
-                  <p>Convenient editor</p>
+                  <p style={{fontWeight:'500', paddingBottom:'10px'}}>Permissions</p>
                   <p>
-                    Adding content to our cms is clear and intuitive, you'll
-                    become a pro user in 2 minutes.
+                  Share access to the CMS with
+other team members and control
+what content they can read and edit.
                   </p>
                 </div>
               </div>
@@ -212,10 +213,9 @@ const cms = () => {
                   />
                 </div>
                 <div>
-                  <p>Convenient editor</p>
+                  <p style={{fontWeight:'500', paddingBottom:'10px'}}>Media cms</p>
                   <p>
-                    Adding content to our cms is clear and intuitive, you'll
-                    become a pro user in 2 minutes.
+                 Our media library makes managing site and product images, videos and audios with ease.
                   </p>
                 </div>
               </div>
@@ -234,10 +234,11 @@ const cms = () => {
                   />
                 </div>
                 <div>
-                  <p>Convenient editor</p>
+                  <p style={{fontWeight:'500', paddingBottom:'10px'}}>Language editor</p>
                   <p>
-                    Adding content to our cms is clear and intuitive, you'll
-                    become a pro user in 2 minutes.
+                Manage different versions of your
+websites or apps in different
+languages with just a few clicks.
                   </p>
                 </div>
               </div>
@@ -255,10 +256,9 @@ const cms = () => {
                   />
                 </div>
                 <div>
-                  <p>Convenient editor</p>
+                  <p style={{fontWeight:'500', paddingBottom:'10px'}}>Streamlined</p>
                   <p>
-                    Adding content to our cms is clear and intuitive, you'll
-                    become a pro user in 2 minutes.
+                All changes you make to your content will be stored and integrated throughout your cloud infrastructure.
                   </p>
                 </div>
               </div>
