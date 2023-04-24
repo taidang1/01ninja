@@ -146,7 +146,7 @@ position: fixed;
 left:0;
 top:0;
 bottom: 0;
-background-color: #91E697;
+background-color: #423D33;
 z-index: 9999;
 overflow: auto;
 
@@ -183,7 +183,7 @@ overflow: auto;
   font-size: 38px;
   color:#1D1A13;
 
-background-color: #91E697;
+background-color: #E12D39;
   
 margin-bottom: 12px;
 
@@ -191,6 +191,9 @@ margin-bottom: 12px;
 .nav_close{
   box-shadow: none;
   transition: ease-in-out 0.1s;
+}
+.mobiletext{
+  color: #E8E6E1;
 }
 
 }

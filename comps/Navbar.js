@@ -131,34 +131,37 @@ const Navbar = (props) => {
                       onClick={handleShow}
                       className={styles.mobile_singlelink}
                     >
-                      <Link href="/about">About<ArrowForwardIosIcon
+                      <motion.div initial={{opacity:0, y:20}} transition={{delay:.1, duration:.6}} whileInView={{opacity:1, y:0}}>
+                      <Link className={styles.mobiletext} href="/about">About<ArrowForwardIosIcon
                 style={{ fontSize: "16px", marginLeft: "6px", }}
               /></Link>
+              </motion.div>
                     </div>
-                    <div
+                    <motion.div initial={{opacity:0,y:20}} transition={{delay:.5, duration:.6,type:'tween'}} whileInView={{opacity:1, y:0}}
                       onClick={handleShow}
                       className={styles.mobile_singlelink}
                     >
-                      <Link href="/services">Services<ArrowForwardIosIcon
+
+                      <Link className={styles.mobiletext} href="/services">Services<ArrowForwardIosIcon
                 style={{ fontSize: "16px", marginLeft: "6px", }}
               /></Link>
-                    </div>
-                    <div
+                    </motion.div>
+                    <motion.div initial={{opacity:0, y:20}} transition={{delay:.9, duration:.6,type:'tween'}} whileInView={{opacity:1, y:0}}
                       onClick={handleShow}
                       className={styles.mobile_singlelink}
                     >
-                      <Link href="/price">Pricing<ArrowForwardIosIcon
+                      <Link className={styles.mobiletext} href="/price">Pricing<ArrowForwardIosIcon
                 style={{ fontSize: "16px", marginLeft: "6px", }}
               /></Link>
-                    </div>
-                    <div
+                    </motion.div>
+                    <motion.div initial={{opacity:0, y:20}} transition={{delay:1.2, duration:.6, type:'tween'}}  whileInView={{opacity:1, y:0}}
                       onClick={handleShow}
                       className={styles.mobile_singlelink}
                     >
-                      <Link href="/about">Demo<ArrowForwardIosIcon
+                      <Link className={styles.mobiletext} href="https://demo.01ninjas.com">Demo<ArrowForwardIosIcon
                 style={{ fontSize: "16px", marginLeft: "6px", }}
               /></Link>
-                    </div>
+                    </motion.div>
                     <div>
                       <button onClick={handleShow} className={styles.btn_mobile}>
                         <Link
