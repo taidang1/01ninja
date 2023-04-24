@@ -107,13 +107,14 @@ export default function Home() {
             transition={{ duration: 0.3, delay: 0.2 }}
             className={styles.hero_subtitle}
             style={{
-              color: "#FAF9F7",
+              color: "#E1E1E1",
               fontSize: "18px",
               paddingTop: "12px",
               lineHeight: "1.2",
               paddingBottom: "12px",
               textAlign: "center",
               maxWidth: "600px",
+              textShadow: '2.5px 2.5px 0 #27241D'
             }}
           >
             Our team of experienced developers and designers are ready to help
@@ -1037,11 +1038,19 @@ export default function Home() {
               </div>
             </SwiperSlide>
             <SwiperSlide className={styles.swiper_slider_tech}>
-              Slide 9
-            </SwiperSlide>
+            <div className={styles.swipe_tech_wrap}>
+                <Image
+                  width={400}
+                  height={400}
+                  className={styles.tech_img}
+                  src="/videostream.png"
+                  alt="video stream"
+                />
+                <p>Video stream</p>
+              </div>            </SwiperSlide>
           </Swiper>
 
-          <div style={{ display: "flex", alignItems: "center" }}>
+        {/* <div style={{ display: "flex", alignItems: "center" }}>
             <a
               style={{
                 textDecoration: "underline",
@@ -1056,7 +1065,7 @@ export default function Home() {
             <ArrowForwardIosIcon
               style={{ fontSize: "16px", marginLeft: "12px" }}
             />
-          </div>
+            </div> */}
         </motion.div>
       </div>
       <div className={styles.home5}>

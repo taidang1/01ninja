@@ -104,7 +104,7 @@ const Navbar = (props) => {
                 <Link href="/price">Pricing</Link>
               </div>
               <div className={styles.singlelink}>
-                <Link href="/about">Demo</Link>
+                <Link href="https://demo.01ninjas.com">Demo</Link>
               </div>
             </div>
             <div onClick={handleShow} className={styles.nav_menu}>
@@ -163,7 +163,7 @@ const Navbar = (props) => {
                       <button onClick={handleShow} className={styles.btn_mobile}>
                         <Link
                           style={{
-                            fontWeight: "550",
+                            fontWeight: "500",
                             display: "flex",
                             alignItems: "center",
                           }}
@@ -177,19 +177,24 @@ const Navbar = (props) => {
                 </motion.div>
               )}
             </AnimatePresence>
-            <button className={styles.btn}  >
-              <Link
+            <Link
               
-                style={{
-                  fontWeight: "550",
-                  display: "flex",
-                  alignItems: "center",
-                }}
-                href="/becomeapartner"
-              >
+           
+              href="/becomeapartner"
+            >
+            <button className={styles.btn} 
+              
+            >
+              <div  style={{
+                fontWeight: "500",
+                display: "flex",
+                alignItems: "center",
+              }}>
+             
                 Join Us <FavoriteIcon style={{ marginLeft: "4px", color:'#27241D' }} />
-              </Link>
+            </div>
             </button>
+              </Link>
           </div>
         </nav>
       </HideOnScroll>
