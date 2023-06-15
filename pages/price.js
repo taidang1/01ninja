@@ -87,7 +87,7 @@ const price = () => {
             <div className={styles.box_one_features}>
               <ul>
                 <li>Free expert consultation</li>
-                <li>Upto 10 custom designed inner pages</li>
+                <li>Upto 6 pages custom designed inner pages</li>
                 <li>In house branding and logo design implementation</li>
                 <li>Copyrighting for content text optimization</li>
                 <li>SEO optimized speeds and google results indexing</li>
@@ -102,9 +102,11 @@ const price = () => {
                 <li>
                   Site analytics, see your web traffic and customer activity
                 </li>
-                <li>Database for customer forms and signup/login</li>
+                <li>ecommerce with pick-up only</li>
+                <li>Products page</li>
+                <li>Product filter</li>
                 <li>Free 24/7 support upto 6 months</li>
-                <li>100% ownership after 6 months</li>
+             
                 <li>live chatebot</li>
                 <li>social media integration</li>
               </ul>
@@ -114,7 +116,7 @@ const price = () => {
             <div className={styles.box_two_price}>
               <p>Full service</p>
               <h2>
-                999
+                499
                 <span style={{ fontSize: "16px", fontWeight: "400" }}>/mo</span>
               </h2>
               <button className={styles.price_call}>Book a call</button>
