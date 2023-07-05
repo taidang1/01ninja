@@ -1,111 +1,181 @@
-import styles from '../styles/Footer.module.css';
-import { useEffect, useState } from 'react'
-import { useFirestore } from '../hooks/useFirestore'
-import PlayArrowIcon from '@mui/icons-material/PlayArrow';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import Link from 'next/link';
-
+import Image from "next/image";
+import Gmaps from "./Gmaps";
 const Footer = () => {
-    const [email, setEmail] = useState('')
+   
 
-    const { addDocument, response } = useFirestore('emailForPromotions')
+    const footerNavs = [
+        {
+            label: "Company",
+            items: [
+                {
+                    href: 'javascript:void()',
+                    name: 'Partners'
+                },
+                {
+                    href: 'javascript:void()',
+                    name: 'Blog'
+                },
+                {
+                    href: 'javascript:void()',
+                    name: 'Team'
+                },
+                {
+                    href: 'javascript:void()',
+                    name: 'Careers'
+                },
+            ],
+        },
+        {
+            label: "Resources",
+            items: [
+                {
+                    href: 'javascript:void()',
+                    name: 'contact'
+                },
+                {
+                    href: 'javascript:void()',
+                    name: 'Support'
+                },
+                {
+                    href: 'javascript:void()',
+                    name: 'Docs'
+                },
+                {
+                    href: 'javascript:void()',
+                    name: 'Pricing'
+                },
+            ],
+        },
+        {
+            label: "About",
+            items: [
+                {
+                    href: 'javascript:void()',
+                    name: 'Terms'
+                },
+                {
+                    href: 'javascript:void()',
+                    name: 'License'
+                },
+                {
+                    href: 'javascript:void()',
+                    name: 'Privacy'
+                },
+                {
+                    href: 'javascript:void()',
+                    name: 'About US'
+                },
+            ]
+        }
+    ]
 
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        addDocument({
-            email
-        })
-        setEmail('')
-    }
-
-    // useEffect(() => {
-    //     if (response.success) {
-    //         console.log('ok')
-    //         setEmail('')
-    //     }
-    // }, [response.success])
 
     return (
-        <div className={styles.footer}>
-            <div className={styles.footer_ninjas}>
-            <img src="/ninjas_logo.png" style={{width:'40px', height:'auto'}} alt="logo" />
-            <p style={{paddingLeft:'6px', color:'#51CA58', fontWeight:'450', fontSize:'1.618em'}}>Canna.</p>
-           {/* <p style={{color:'#E8E6E1', paddingTop:'9px', paddingLeft:'6px'}}>01ninjas.com</p>*/}
-            </div>
-            <div className={styles.footer_links}>
-                <div className={styles.footer_links_wrap}>
-            <div className={styles.footer_sections}>
-                <p style={{color:'#D3CEC4', paddingBottom:'10px', fontSize:'14px'}}>sections</p>
-                <Link href="/about">
-                <p className={styles.footer_p}>About</p>
-                </Link>
-                <Link href="/services">
-                <p className={styles.footer_p}>Services</p>
-                </Link>
-                <Link href="/price">
-                <p className={styles.footer_p}>Pricing</p>
-                </Link>
-                <Link href="https://demo.01ninjas.com">
-                <button className={styles.footer_demo}>Demo <PlayArrowIcon/></button>
-                </Link>
-            </div>
-            <div className={styles.footer_resources}>
-                <p style={{color:'#D3CEC4', paddingBottom:'10px', fontSize:'14px'}}>resources</p>
-                <Link href="/services/brand">
-                <p className={styles.footer_p}>Branding</p>
-                </Link>
-                <Link href="/services/ecommerce">
-                <p className={styles.footer_p}>Ecommerce</p>
-                </Link>
-                <Link href="/services/custom">
-                <p className={styles.footer_p}>Custom</p>
-                </Link>
-                <Link href="/services/cms">
-                <p className={styles.footer_p}>CMS</p>
-                </Link>
-                <Link href="/services/support">
-                <p className={styles.footer_p}>Support</p>
-                </Link>
-                <Link href="/services/support">
-                <p className={styles.footer_p}>Analytics</p>
-                </Link>
+        <footer className="text-slate-50 bg-slate-950  px-4 py-4 max-w-screen-xl mx-auto md:px-8">
+        <div className="gap-6 justify-between md:flex">
+            <div className="flex-1">
+                <div className=" flex row items-center">
+                <Image
+                  src="/ninjas_logo.svg"
+                  style={{ width: "30px", height: "30px" }}
+                  alt="logo"
+                  width={40}
+                  height={40}
+                />                  
+                
+                
+                
+                  <p style={{fontWeight:'600', paddingLeft:'6px'}} className="leading-relaxed text-green-500 mt-2 text-xl">
+Canna                    </p>
 
-
-            </div>
-            </div>
-            <div className={styles.footer_contact}>
-                <p style={{color:'#D3CEC4', paddingBottom:'10px', fontSize:'14px'}}>contact</p>
-                <p style={{color:'#fff'}} className={styles.footer_p}>+1(201)328-7539</p>
-                <p className={styles.footer_p}>canna@01ninjas.com</p>
-                <div>
-                    <Link href="/becomeapartner">
-                <button className={styles.footer_demo}>Join us <FavoriteIcon style={{paddingLeft:'6px', color:'#27241D'}}/></button>
-                </Link>
                 </div>
+              
+              <div> 
+                 <p className="leading-relaxed text-slate-50 max-w-xs mt-2 text-base">
+                 📱: +1(201)328-7539
+                        </p>
+                        <p className="leading-relaxed text-slate-50 max-w-xs mt-2 text-base" >✉️: canna@01ninjas.com</p>
+                        </div>
+                      
+               
             </div>
+          
+            <div className="flex-1 text-slate-50 mt-10 space-y-6 items-center justify-between sm:flex md:space-y-0 md:mt-0">
+                
+                {
+                    footerNavs.map((item, idx) => (
+                        <ul
+                            className="space-y-4  "
+                            key={idx}
+                        >
+                            
+                            <h4 className="text-green-500 text-xs">
+                                { item.label }
+                            </h4>
+                            
+                            {
+                                item.items.map(((el, idx) => (
+                                    <li  key={idx}>
+                                        <a 
+                                            href={el.href}
+                                            className="hover:underline hover:text-green-500 text-white"
+                                        
+                                        >
+                                            
+                                           { el.name }
+                      
+                                           
+                                        </a>
+                                        
+                                        
+                                    </li>
+                                    
+                                )))
+                                
+                            }
+                        </ul>
+                    ))
+                }
+                
             </div>
-            <div className={styles.footer_form}>
-                <p style={{fontSize:'1.618em', paddingBottom:'20px'}}>Join our newsletter</p>
-            <p style={{fontSize:'16px', paddingBottom:'10px', width:'100%'}}>Sign up to receive special deals and promotions!</p>
-            <form onSubmit={handleSubmit}>
-                <div>
-                    <label style={{display:'flex', flexDirection:'column'}}>
-                        <span style={{paddingBottom:'10px', fontSize:'14px', fontWeight:'500', textAlign:'left'}}>Email:</span>
-                        <input 
-                            type="text"
-                            required
-                            onChange={(e) => setEmail(e.target.value)}
-                            value={email}
-                        />
+            <div style={{display:'flex', flexDirection:'column'}} className="" >
+            <form 
+                    onSubmit={(e) => e.preventDefault()}
+                >
+                    <label className="block pt-4 pb-2">
+                        Stay up to date
                     </label>
+                    <div className="max-w-sm flex items-center  rounded p-1">
+                        <input 
+                        style={{borderRadius:'5px 0 0 5px'}}
+                            type="email"
+                            placeholder="Enter your email"
+                            className="w-full p-2.5 outline-non bg-slate-50 text-black"
+                        />
+                        <button style={{borderRadius:'0 5px 5px 0'}}
+                            className="p-2.5  text-white bg-green-500 outline-none shadow-md focus:shadow-none sm:px-5"
+                        >
+                            Subscribe
+                        </button>
+                    </div>
+                </form>
                 </div>
-                <div style={{float:'right'}}>
-                <button style={{marginTop:'12px'}} className={styles.footer_demo}>Submit <ArrowForwardIosIcon style={{paddingLeft:'6px'}}/></button>
-                </div>
-</form>
-            </div>
+            
         </div>
+        <div className="mt-8 py-6 border-t text-xs text-slate-400 items-center justify-between sm:flex">
+            <div className="mt-4 sm:mt-0">
+                &copy; 2023 Canna All rights reserved.
+            </div>
+           
+        </div>
+        <style jsx>{`
+            .svg-icon path,
+            .svg-icon polygon,
+            .svg-icon rect {
+                fill: currentColor;
+            }
+        `}</style>
+    </footer>
     );
 }
 

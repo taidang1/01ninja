@@ -16,7 +16,7 @@ export default function Document() {
               d.getElementsByTagName('head')[0].appendChild(s);
               w[x] =  w[x] || function() { (w[x].ac = w[x].ac || []).push(arguments) };
             })(window, document, 'amazon_connect', '90885fda-65c9-4077-86aa-d57d42b5e84b');
-            amazon_connect('styles', { openChat: { color: '#31B237', backgroundColor: '#423d33'}, closeChat: { color: '#ffffff', backgroundColor: '#423d33'} });
+            amazon_connect('styles', { openChat: { color: '#31B237', backgroundColor: '#181818'}, closeChat: { color: '#ffffff', backgroundColor: '#423d33'} });
             amazon_connect('snippetId', 'QVFJREFIaUczMG9CY2pZeGVON3dIRFJwVkJlRHFKcW1kTTRlazcxajNHMVd5VzM1ZWdFb21jOGN5Wm5lMjhVaTVUN3d5QnNiQUFBQWJqQnNCZ2txaGtpRzl3MEJCd2FnWHpCZEFnRUFNRmdHQ1NxR1NJYjNEUUVIQVRBZUJnbGdoa2dCWlFNRUFTNHdFUVFNMGxCUm9wa2JjaDIrWWNXSkFnRVFnQ3ZEUGlzZDREcmR5STk0NGJVTzFOcjJQbVRad3F4SnUwbis2NWJVdHI4Z2VQKy9BUWNrdVRHY0NUUGY6OjV3VXQyTlVsTVUyUHdtQURNdG5zTWZ1RWZ1MVhVTmxaM2k2aW9JVHhZc2NoV05WbURja0VtYWZ0cVh2NHJHeEsvZHpaUm5uYkRSV2Q0dTQ1TTI2dUFmREI5Uyt1M0h5SlhDVDkvSUVwZVRsUzZTc2hqenU3Yyt6dWswOEQ0dFpWTzNFODFhemF4Zy9mQjFzU2ZlaEFPVFpscm9kVUZpdz0=');
             amazon_connect('supportedMessagingContentTypes', [ 'text/plain', 'text/markdown' ]);
           `

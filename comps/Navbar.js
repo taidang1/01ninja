@@ -22,186 +22,103 @@ function HideOnScroll({ children }) {
   );
 }
 
-const Navbar = (props) => {
-  const [clientWindowHeight, setClientWindowHeight] = useState("");
+const Navbar = () => {
+  // const [clientWindowHeight, setClientWindowHeight] = useState("");
+  // const [isScrolled, setIsScrolled] = useState(false);
 
-  const handleScroll = () => {
-    setClientWindowHeight(window.scrollY);
-  };
+  // const handleScroll = () => {
+  //   setClientWindowHeight(window.scrollY);
+  //   setIsScrolled(window.scrollY > 0);
+  // };
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  });
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
 
-  const [backgroundTransparacy, setBackgroundTransparacy] = useState(0);
+  // const [show, setShow] = useState(false);
 
-  const [boxShadow, setBoxShadow] = useState(0);
+  // const handleShow = () => {
+  //   setShow(!show);
+  // };
 
-  useEffect(() => {
-    let backgroundTransparacyVar = clientWindowHeight / 600;
+  // const [boxShadow, setBoxShadow] = useState(0);
 
-    if (backgroundTransparacyVar < 1) {
-      let boxShadowVar = backgroundTransparacyVar * 1;
-      setBackgroundTransparacy(backgroundTransparacyVar);
 
-      setBoxShadow(boxShadowVar);
-    }
-  }, [clientWindowHeight]);
+const [navbar, setNavbar] = useState(false)
 
-  const [show, setShow] = useState(false);
+const changeBackground = () => {
+  if (window.scrollY >= 80) {
+    setNavbar(true)
+  }
+  else {
+    setNavbar(false)
+  }
+}
 
-  const handleShow = () => {
-    setShow(!show);
-  };
+useEffect(() => {
+  window.addEventListener("scroll", changeBackground);
+}, []);
 
   return (
-    <div className={styles.navhover}>
+    <div>
       <HideOnScroll>
-        <nav
-          style={{
-            background: `#E8E6E1`,
-
-            boxShadow: `rgb(79 76 69/ ${boxShadow})  0px  10px 20px`,
-          }}
-          className={styles.navbar}
-        >
-          <div className={styles.content}>
-            <div className={styles.logo}>
-              <motion.div
-              whileTap={{ rotate: -390, scale: 1 }}
-              transition={{ duration: 0.2, type: "tween" }}
-              >
-              <Link href="/">
-                <Image
+    <div className={navbar ? 'navbar active' : 'navbar'}>
+   
+  <div className="navbar-start">
+    <div className="dropdown">
+      <label tabIndex={0} className="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+      </label>
+      <ul style={{color:'#000 !important'}} tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-green-500  rounded-box w-52">
+        
+        <li>
+          <a>Services</a>
+          <ul className="p-2">
+            <li><a>Submenu 1</a></li>
+            <li><a>Submenu 2</a></li>
+          </ul>
+        </li>
+        <li><a href="/about">About us</a></li>
+        <li><a>Pricing</a></li>
+      <li><a>Demo</a></li>
+      </ul>
+    </div>
+    <div style={{display:'flex', flexDirection:'row', alignItems:'center', paddingLeft:'2rem'}}>
+    <Image
                   src="/ninjas_logo.svg"
-                  style={{ width: "40px", height: "40px" }}
+                  style={{ width: "30px", height: "30px" }}
                   alt="logo"
                   width={40}
                   height={40}
                 />
-              </Link>
-              </motion.div>
-              <p
-                style={{
-                  fontWeight: "550",
-                  paddingLeft: "9px",
-                  color: "#51CA58",
-                  fontSize: "1.618em",
-                }}
-              >
-                Canna.
-              </p>
-            </div>
-            <div className={styles.link}>
-              <div className={styles.singlelink}>
-                <Link href="/about">About</Link>
-              </div>
-              <div className={styles.singlelink}>
-                <Link href="/services">Services</Link>
-              </div>
-              <div className={styles.singlelink}>
-                <Link href="/price">Pricing</Link>
-              </div>
-              <div className={styles.singlelink}>
-                <Link href="https://demo.01ninjas.com">Demo</Link>
-              </div>
-            </div>
-            <div onClick={handleShow} className={styles.nav_menu}>
-              <button className={styles.nav_menu_btn}>
-                <MenuIcon style={{ fontSize: "28px", color:'#27241D' }} />
-              </button>
-            </div>
-            <AnimatePresence>
-              {show && (
-                <motion.div
-                  initial={{ x: 500 }}
-                  transition={{ duration: 0.5, type: "tween", delay: 0.3 }}
-                  animate={{
-                    x: 0,
-                  }}
-                  exit={{ x: 500 }}
-                  className={styles.mobile_links}
-                >
-                  <div className={styles.mobile_links_wrap}>
-                    <div  style={{marginTop:'20px'}}>
-                      <button className={styles.nav_close} onClick={handleShow}><CloseIcon style={{color:'#1D1A13', fontSize:'28px'}}/></button>
-                    </div>
-                    <div
-                      onClick={handleShow}
-                      className={styles.mobile_singlelink}
-                    >
-                      <motion.div initial={{opacity:0, y:20}} transition={{delay:.1, duration:.3}} whileInView={{opacity:1, y:0}}>
-                      <Link className={styles.mobiletext} href="/about">About<ArrowForwardIosIcon
-                style={{ fontSize: "16px", marginLeft: "6px", }}
-              /></Link>
-              </motion.div>
-                    </div>
-                    <motion.div initial={{opacity:0,y:20}} transition={{delay:.2, duration:.3,type:'tween'}} whileInView={{opacity:1, y:0}}
-                      onClick={handleShow}
-                      className={styles.mobile_singlelink}
-                    >
-
-                      <Link className={styles.mobiletext} href="/services">Services<ArrowForwardIosIcon
-                style={{ fontSize: "16px", marginLeft: "6px", }}
-              /></Link>
-                    </motion.div>
-                    <motion.div initial={{opacity:0, y:20}} transition={{delay:.3, duration:.3,type:'tween'}} whileInView={{opacity:1, y:0}}
-                      onClick={handleShow}
-                      className={styles.mobile_singlelink}
-                    >
-                      <Link className={styles.mobiletext} href="/price">Pricing<ArrowForwardIosIcon
-                style={{ fontSize: "16px", marginLeft: "6px", }}
-              /></Link>
-                    </motion.div>
-                    <motion.div initial={{opacity:0, y:20}} transition={{delay:.4, duration:.3, type:'tween'}}  whileInView={{opacity:1, y:0}}
-                      onClick={handleShow}
-                      className={styles.mobile_singlelink}
-                    >
-                      <Link className={styles.mobiletext} href="https://demo.01ninjas.com">Demo<ArrowForwardIosIcon
-                style={{ fontSize: "16px", marginLeft: "6px", }}
-              /></Link>
-                    </motion.div>
-                    <div>
-                      <button onClick={handleShow} className={styles.btn_mobile}>
-                        <Link
-                          style={{
-                            fontWeight: "500",
-                            display: "flex",
-                            alignItems: "center",
-                          }}
-                          href="/becomeapartner"
-                        >
-                          Join Us <FavoriteIcon style={{ marginLeft: "4px", color:'#27241D' }} />
-                        </Link>
-                      </button>
-                    </div>
-                  </div>
-                </motion.div>
-              )}
-            </AnimatePresence>
-            <Link
-              
-           
-              href="/becomeapartner"
-            >
-            <button className={styles.btn} 
-              
-            >
-              <div  style={{
-                fontWeight: "500",
-                display: "flex",
-                alignItems: "center",
-              }}>
-             
-                Join Us <FavoriteIcon style={{ marginLeft: "4px", color:'#27241D' }} />
-            </div>
-            </button>
-              </Link>
-          </div>
-        </nav>
-      </HideOnScroll>
+    <p style={{color:'rgb(34 197 94)', fontWeight:'600',paddingLeft:'6px'}} className="text-xl">Canna</p>
     </div>
+  </div>
+  <div className="navbar-center hidden lg:flex">
+    <ul className="menu menu-horizontal  px-1">
+      
+      <li tabIndex={0}>
+        <details>
+          <summary>Services</summary>
+          <ul  className="p-2 bg-green-500">
+            <li><a>Submenu 1</a></li>
+            <li><a>Submenu 2</a></li>
+            </ul>
+        </details>
+      </li>
+      <li><a href="/about">About us</a></li>
+      <li><a>Pricing</a></li>
+      <li><a>Demo</a></li>
+    </ul>
+  </div>
+  <div className="navbar-end ">
+    <button style={{marginRight:'2rem'}} className="rounded-md bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-200 hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Join us</button>
+  </div>
+      
+</div>
+</HideOnScroll>
+</div>
   );
 };
 
